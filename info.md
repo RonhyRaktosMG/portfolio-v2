@@ -7,11 +7,11 @@
 ✅ HERO (Accueil)
 Titre
 
-Fullstack Web & Mobile Developer (Django • Flutter • Next.js)
+Fullstack Web & Mobile Developer • AI & Data Enthusiast
 
 Sous-titre
 
-With a strong passion for clean UI and solid backend architecture, I build fast, scalable, and user-focused applications using modern technologies.
+With a strong passion for clean UI and solid backend architecture, I build fast, scalable, and user-focused applications using modern technologies — and I also explore AI, data, and algorithms to create smarter solutions.
 
 Localisation
 
@@ -36,11 +36,12 @@ Sous-titre About
 
 Contenu About
 
-I’m a passionate developer specialized in web and mobile development, with solid experience in building complete applications from UI design to backend logic.
-I work mainly with Django for backend systems and APIs, and Flutter for cross-platform mobile/desktop apps. I also use Next.js for modern, high-performance websites and portfolios.
-
-I enjoy creating products that feel smooth, intuitive, and reliable — whether it’s a school platform, a queue management system, or a real-time application.
+I’m a fullstack developer specialized in web and mobile development, with experience building complete applications from UI to backend systems.
+My main stack includes Django, Flutter, and Next.js, and I focus on clean architecture, performance, and user experience.
+Beyond development, I’m also passionate about AI, data, and algorithms. I enjoy exploring topics like data processing, machine learning fundamentals, and optimization to build smarter applications — from intelligent features to better decision-making systems.
+I love learning continuously and turning complex ideas into simple, usable products.
 My goal is always the same: deliver clean code, modern design, and a product that users love.
+
 
 Stats About
 
@@ -94,10 +95,20 @@ Structuring efficient databases, writing clean queries, and ensuring performance
 
 Deploying applications to production with best practices (Vercel, VPS, Linux environments, and basic DevOps workflows).
 
-✅ PROJECTS
+9) AI-Powered Features Integration
 
-Projects are coming soon.
-I’m currently organizing my best work to showcase here — stay tuned!
+Adding smart features like recommendations, text processing, automation, or simple prediction systems into apps using Python-based tools.
+
+10) Data Analysis & Visualization
+
+Cleaning, analyzing, and visualizing data to extract insights using tools like Pandas, NumPy, and Matplotlib — perfect for dashboards and reports.
+
+11) Algorithms & Problem Solving
+
+Solving complex problems with optimized algorithms, clean logic, and structured code — useful for performance-critical features and system design.
+
+✅ PROJECTS
+(ne modifie pas encore)
 
 ✅ FAQ (Frequently Asked Questions)
 1) What services do you offer?
@@ -128,10 +139,14 @@ Yes. I’m available for freelance projects, collaborations, and remote work wor
 I communicate clearly, share progress regularly, and focus on delivering stable features on time.
 I can work with Git/GitHub and adapt easily to team workflows.
 
+7) Can you integrate AI features into a web or mobile app?
+
+Yes. I can integrate AI-powered features into apps by connecting backend services, APIs, or Python-based models depending on the project needs.
+
 ✅ Contact CTA
 Contact CTA Text
 
-I enjoy discussing new ideas and challenging projects.
+I enjoy discussing new projects challenges.
 Tell me about your goals, your needs, and your timeline — and let’s build something great together.
 
 ✅ CONTACT (Infos)
@@ -151,7 +166,7 @@ GitHub: RonhyRaktosMG
 ✅ EXPERIENCE
 Fullstack Web & Mobile Developer
 
-Freelance / Personal Projects
+## Freelance / Personal Projects
 (2024 – Present)
 
 Building modern applications for web and mobile using Django, Flutter, and Next.js.
@@ -167,7 +182,7 @@ Worked on UI/UX improvements and responsive interfaces
 
 Deployed projects and managed versions using Git & GitHub
 
-Backend Developer (Django)
+## Backend Developer (Django)
 
 Student & Team Projects
 (2024)
@@ -181,7 +196,7 @@ Implemented CRUD systems and admin dashboards
 
 Built scalable backend services for applications
 
-Junior Developer
+## Junior Developer
 
 Learning & Personal Practice
 (2022 – 2023)
@@ -195,8 +210,21 @@ Built mini-projects to improve logic, UI design, and project structure
 
 Started building real-world applications step by step
 
+## AI & Data Learning Projects
+
+Self-learning & Practice
+(2024 – Present)
+
+Exploring AI and data science fundamentals through hands-on projects and experiments, focusing on practical use cases and real-world applications.
+
+Data cleaning and analysis with Python
+
+Basic machine learning workflows (training, evaluation, testing)
+
+Algorithmic problem solving and optimization
+
 ✅ SKILLS
-Frontend
+## Frontend
 
 Next.js / React — 85%
 
@@ -206,7 +234,8 @@ HTML / CSS — 90%
 
 Tailwind CSS / Bootstrap — 92%
 
-Mobile & Desktop
+
+## Mobile & Desktop
 
 Flutter / Dart — 92%
 
@@ -214,7 +243,8 @@ State Management (Riverpod / Provider) — 80%
 
 UI Design & Responsive Layouts — 90%
 
-Backend
+
+## Backend
 
 Django / Django REST Framework — 90%
 
@@ -224,7 +254,9 @@ MySQL / PostgreSQL — 85%
 
 Authentication & Permissions — 85%
 
-Tools & DevOps
+
+
+## Tools & DevOps
 
 Git & GitHub — 95%
 
@@ -233,3 +265,23 @@ Linux / CLI Basics — 75%
 Deployment (Vercel / VPS Basics) — 78%
 
 Docker (Basics) — 65%
+
+
+## AI & Data
+
+Python for Data (Pandas / NumPy) — 75%
+
+Data Visualization (Matplotlib) — 70%
+
+Machine Learning Basics (Scikit-learn) — 60%
+
+Deep Learning Basics (PyTorch) — 55%
+
+
+## Algorithms
+
+Data Structures & Algorithms — 75%
+
+Problem Solving (Competitive style) — 80%
+
+Complexity & Optimization — 70%
