@@ -1,0 +1,1159 @@
+<html lang="en" data-bs-theme="dark"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="/favicon.ico" rel="icon">
+    <title>
+      Code Campus - LMS Platform | Mhr Rony - MERN Stack Developer Portfolio
+    </title>
+    <meta name="description" content="Detailed case study of Code Campus - A comprehensive Learning Management System built with MERN stack and TypeScript featuring real-time notifications, course management, and multi-role architecture.">
+    <meta name="author" content="Mhr Rony">
+    <meta name="keywords" content="MERN stack, React.js, TypeScript, Node.js, MongoDB, Express.js, LMS, Learning Management System, Course Platform, Real-time Notifications, WebSocket, fullstack developer, web development, portfolio, case study">
+    <link rel="canonical" href="https://mhrrony.com/projects/codecampus-details.html">
+
+    <!-- Stylesheet
+============================== -->
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.min.css">
+    <!-- Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <!-- Colors Css -->
+    <link id="color-switcher" type="text/css" rel="stylesheet" href="../css/color-cyan.css">
+    <!-- Load saved color immediately -->
+    <script>
+      (function () {
+        var savedColorName = localStorage.getItem("portfolioColorName");
+        if (savedColorName) {
+          var colorSwitcher = document.getElementById("color-switcher");
+          if (colorSwitcher) {
+            var currentHref = colorSwitcher.getAttribute("href");
+            var correctPath = currentHref.startsWith("../")
+              ? "../css/color-" + savedColorName + ".css"
+              : "css/color-" + savedColorName + ".css";
+            colorSwitcher.setAttribute("href", correctPath);
+          }
+        }
+      })();
+    </script>
+    <style>
+      .theme-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+      .theme-toggle-btn:hover {
+        transform: scale(1.1);
+      }
+      .theme-toggle-btn i {
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+      [data-bs-theme="light"] {
+        --bs-body-bg: #fff;
+        --bs-body-color: #212529;
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] body {
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] #main-wrapper {
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] .bg-dark {
+        background-color: #f8f9fa !important;
+      }
+      [data-bs-theme="light"] .text-light,
+      [data-bs-theme="light"] .text-white {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] h1:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h2:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] li:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] p:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"]
+        span:not(.text-primary):not(.text-secondary):not(.text-primary *) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-10:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-11:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-7:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-8:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-9:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-primary,
+      [data-bs-theme="light"] .text-primary * {
+        color: var(--bs-primary);
+      }
+      [data-bs-theme="light"] .text-secondary {
+        color: var(--bs-secondary);
+      }
+      [data-bs-theme="light"] .primary-menu {
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link.active,
+      [data-bs-theme="light"] .primary-menu .nav-link:hover {
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] .dropdown-menu {
+        background-color: #fff !important;
+        border: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .dropdown-item {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .dropdown-item:hover {
+        background-color: #f8f9fa !important;
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] #header.sticky-top-slide {
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      [data-bs-theme="light"] .btn-outline-light {
+        border-color: var(--bs-body-color);
+        color: var(--bs-body-color);
+      }
+      [data-bs-theme="light"] .btn-outline-light:hover {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        color: #000;
+      }
+      [data-bs-theme="light"] footer {
+        border-top: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .featured-box {
+        background-color: #fff !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      [data-bs-theme="light"] hr {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- Preloader -->
+    <div class="preloader" role="status" aria-live="polite" style="display: none;">
+      <div class="text-loader" style="display: none;">
+        <span>M</span><span>H</span><span>R</span><span class="space">&nbsp;</span><span>R</span><span>O</span><span>N</span><span>Y</span>
+      </div>
+      <span class="sr-only">Loading...</span>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper
+=============================== -->
+    <div id="main-wrapper" class="dotted-background">
+      <!-- Header
+  ============================ -->
+      <header id="header" class="sticky-top-slide">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500 mt-4 sticky-on">
+          <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="../index.html">
+              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="">
+            </a>
+            <!-- Logo End -->
+            <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">Services<i class="arrow"></i></a>
+                  <ul class="dropdown-menu" style="display: none; height: 268.448px; padding-top: 7.94224px; margin-top: 0px; padding-bottom: 7.94224px; margin-bottom: 0px;">
+                    <li>
+                      <a class="dropdown-item" href="../pages/services.html">All Services</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="../services/react-development-details.html">React Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/fullstack-development-details.html">Full-Stack Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/nodejs-backend-details.html">Node.js Backend</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/devops-deployment-details.html">DevOps &amp; Deployment</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/ecommerce-solutions-details.html">E-commerce Solutions</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/web-consulting-details.html">Web Consulting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#">Projects<i class="arrow"></i></a>
+                  <ul class="dropdown-menu" style="display: none; height: 343.034px; padding-top: 9.424px; margin-top: 0px; padding-bottom: 9.424px; margin-bottom: 0px;">
+                    <li>
+                      <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/devstation-details.html">DevStation IT - Corporate</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="../projects/codecampus-details.html">Code Campus - LMS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/tayaaki-details.html">Tayaaki - E-commerce</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/byte-details.html">Byte - Social Platform</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/izabela-details.html">Izabela - AI Companion</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/bloodconnect-details.html">BloodConnect</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/zerohunger-details.html">Zero Hunger</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+              <span></span><span></span><span></span>
+            </button>
+            <!-- Hamburger Menu Button End -->
+
+            <!-- Hire me Button -->
+            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+            <!-- Hire me Button End -->
+            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn ms-2" style="
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              " title="Toggle Dark/Light Mode"><i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i><i class="fa-solid fa-sun theme-icon-light" style="display: none"></i></a>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
+
+      <!-- Page Header
+	============================================= -->
+      <section class="page-header">
+        <div class="container text-center py-5 mt-5">
+          <!-- Page Title -->
+          <p class="text-primary text-4 fw-500 mt-5 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+            Full Stack MERN Development
+          </p>
+          <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+            Code Campus - LMS Platform
+          </h2>
+          <hr class="vr heading-separator-line mb-0 wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+        </div>
+      </section>
+      <!-- Page Header end -->
+
+      <!-- Content
+  ============================================= -->
+      <div id="content" role="main">
+        <!-- Projects
+    ============================================= -->
+        <section class="section pt-0">
+          <div class="container">
+            <p class="text-6 wow fadeInUp" data-wow-delay="0.2s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.2s;">
+              Code Campus is a comprehensive Learning Management System (LMS)
+              built with React, TypeScript, Node.js, and MongoDB, designed to
+              revolutionize online education through modern web technologies.
+              The platform provides a complete ecosystem for educational content
+              delivery, featuring course management, secure payment processing
+              via SSL Commerz, video content delivery with advanced playback
+              controls, and real-time collaboration tools.
+            </p>
+            <p class="text-6 wow fadeInUp" data-wow-delay="0.25s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.25s;">
+              The platform features SSL Commerz payment gateway integration
+              supporting multiple payment methods (bKash, Nagad, credit/debit
+              cards) for secure course purchases, comprehensive admin dashboard
+              for managing courses, users, payments, and analytics, video upload
+              and streaming with advanced playback controls and progress
+              tracking, and live group chat system enabling real-time
+              communication between course members using Socket.io.
+            </p>
+            <p class="text-6 wow fadeInUp" data-wow-delay="0.3s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.3s;">
+              Code Campus empowers administrators with complete control over the
+              platform including course creation and editing, user management
+              with role-based access control, payment transaction monitoring,
+              content moderation, enrollment tracking, and comprehensive
+              analytics dashboard. Students can purchase courses securely,
+              access video content with adaptive streaming, track their learning
+              progress, participate in live group discussions, and download
+              course materials.
+            </p>
+            <p class="text-6 wow fadeInUp" data-wow-delay="0.35s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.35s;">
+              Developed by Mhr Rony, Code Campus demonstrates expertise in
+              building scalable educational platforms with real-time features,
+              secure payment integration, and advanced media handling. The
+              platform combines modern TypeScript development with robust
+              backend architecture to deliver a seamless learning experience for
+              both students and administrators.
+            </p>
+            <div class="brands-grid separator-border my-4 my-sm-5">
+              <div class="row gx-5">
+                <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+                  <p class="text-body-secondary fw-500 mb-0">Client:</p>
+                  <p class="text-5 fw-600 mb-0">Personal Project</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+                  <p class="text-body-secondary fw-500 mb-0">Industry:</p>
+                  <p class="text-5 fw-600 mb-0">Education Technology</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+                  <p class="text-body-secondary fw-500 mb-0">Duration:</p>
+                  <p class="text-5 fw-600 mb-0">6 Months</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                  <p class="text-body-secondary fw-500 mb-0">URL:</p>
+                  <p class="text-5 fw-600 mb-0">
+                    <a class="link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-25-hover" target="_blank" href="https://codecampus.mhrrony.com/">View Live Site</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="hstack flex-wrap gap-3 justify-content-center my-5 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+              <span class="d-inline-block border rounded-4 py-2 px-3">React 18</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">TypeScript</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Node.js</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Express.js</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">MongoDB</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Socket.io</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">SSL Commerz</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">JWT Authentication</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Cloudinary</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Tailwind CSS</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Video.js</span>
+              <span class="d-inline-block border rounded-4 py-2 px-3">Vite</span>
+            </div>
+          </div>
+
+          <!-- Project Video Section -->
+          <div class="container mb-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                  <iframe src="https://www.youtube.com/embed/2EjWnNU-QZg" title="Code Campus LMS Platform Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+                <p class="text-center text-body-secondary mt-3 mb-0">
+                  <i class="fas fa-play-circle me-2"></i>Watch the full project
+                  demo and walkthrough
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Video Section End -->
+
+          <!-- Carousel - Project Images -->
+          <div class="owl-carousel owl-theme mb-5 wow fadeInUp owl-loaded owl-drag" data-wow-delay="0.1s" data-autoplay="true" data-loop="true" data-nav="false" data-center="true" data-margin="30" data-slideby="1" data-stagepadding="5" data-items-xs="1" data-items-sm="2" data-items-md="2" data-items-lg="2" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+            
+            
+            
+            
+            
+            
+            
+            
+          <div class="owl-stage-outer"><div class="owl-stage" style="transition: 0.25s; width: 10930px; padding-left: 5px; padding-right: 5px; transform: translate3d(-7166px, 0px, 0px);"><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Zero Hunger - Charity Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759606534/zerohunger.mhrrony.com__2_cth0ob.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Portfolio Website" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767886472/www.mhrrony.com__1_eumqyt.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="AI Companion" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767468993/Screenshot_2026-01-04_at_1.06.18_AM_xx2rvy.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="DevStation IT - Corporate Website" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1768062786/Screenshot_2026-01-10_223223_llxi5k.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Code Campus - LMS Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759600708/codecampus.mhrrony.com__1_omgkcd.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Tayaaki - E-commerce Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766086328/www.tayaaki.com__1_ccqpwh.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Social Media App" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767887737/localhost_8080__n3pylk.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Blood Connect - Healthcare Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767885639/bloodconnect.mhrrony.com__1_tinpem.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Zero Hunger - Charity Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759606534/zerohunger.mhrrony.com__2_cth0ob.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Portfolio Website" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767886472/www.mhrrony.com__1_eumqyt.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="AI Companion" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767468993/Screenshot_2026-01-04_at_1.06.18_AM_xx2rvy.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item active center" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="DevStation IT - Corporate Website" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1768062786/Screenshot_2026-01-10_223223_llxi5k.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned active" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Code Campus - LMS Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759600708/codecampus.mhrrony.com__1_omgkcd.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Tayaaki - E-commerce Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766086328/www.tayaaki.com__1_ccqpwh.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Social Media App" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767887737/localhost_8080__n3pylk.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div><div class="owl-item cloned" style="width: 652.5px; margin-right: 30px;"><div class="item">
+              <img class="img-fluid rounded-4" alt="Blood Connect - Healthcare Platform" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767885639/bloodconnect.mhrrony.com__1_tinpem.png" style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+                ">
+            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
+          <!-- Carousel Project Images End -->
+
+          <div class="container">
+            <div class="row gx-5">
+              <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h2 class="heading-font-family text-uppercase text-8 fw-600 mb-4">
+                  Challenge
+                </h2>
+              </div>
+              <div class="col-md-8 col-lg-9 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  The primary challenge was building a comprehensive Learning\n
+                  Management System that combines secure payment processing,\n
+                  video content delivery, real-time communication, and
+                  complete\n administrative control while maintaining optimal
+                  performance\n and user experience across all features.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Payment Integration &amp; Course Purchase
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Integrating
+                  <span class="text-body-tertiary fw-500">SSL Commerz payment gateway for secure course
+                    purchases</span>
+                  supporting multiple payment methods including bKash, Nagad,\n
+                  credit/debit cards, and internet banking. Implementing
+                  secure\n payment flow with server-to-server validation,
+                  transaction\n monitoring with real-time status updates,
+                  automatic enrollment\n upon successful payment, and
+                  comprehensive payment history\n tracking for both students and
+                  administrators.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Admin Management &amp; Control
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Building comprehensive admin dashboard with complete
+                  platform\n control including course creation, editing, and
+                  deletion,\n user management with role-based access control
+                  (Admin,\n Instructor, Student), payment transaction monitoring
+                  and\n reporting, content moderation and approval workflows,\n
+                  enrollment tracking and management, analytics dashboard with\n
+                  revenue, user growth, and course performance metrics, and\n
+                  <a class="link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-25-hover" href="#">real-time notifications for new enrollments and
+                    transactions</a>.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Video Upload &amp; Playback System
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Implementing video upload functionality with Cloudinary\n
+                  integration for optimized storage and delivery, building\n
+                  advanced video player with playback controls including\n
+                  play/pause, seek, volume, quality selection, and fullscreen,\n
+                  creating video progress tracking system saving watch
+                  progress\n for resume functionality, implementing adaptive
+                  streaming for\n different network conditions, adding support
+                  for multiple video\n formats and resolutions, and ensuring
+                  secure video delivery\n with access control preventing
+                  unauthorized viewing.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Live Group Chat &amp; Real-time Communication
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Building real-time group chat system using Socket.io for\n
+                  instant messaging between course members, implementing
+                  course-specific\n chat rooms with access restricted to
+                  enrolled students,\n creating message persistence with MongoDB
+                  for chat history,\n developing typing indicators and online
+                  status features,\n implementing message notifications for new
+                  messages, adding\n file sharing capabilities within chat, and
+                  building moderation\n tools for instructors to manage
+                  discussions.
+                </p>
+              </div>
+            </div>
+
+            <div class="row gx-5 mt-5">
+              <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h2 class="heading-font-family text-uppercase text-8 fw-600 mb-4">
+                  System Design
+                </h2>
+              </div>
+              <div class="col-md-8 col-lg-9 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                <h4 class="text-5 fw-600 mb-3">Frontend Architecture</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Built with React 18 and TypeScript utilizing Vite for fast\n
+                  development and optimized production builds, Tailwind CSS
+                  for\n responsive utility-first styling, React Router v6 for\n
+                  client-side routing, Context API for state management,\n
+                  Socket.io client for real-time features, Video.js for
+                  advanced\n video playback, React Hook Form with validation for
+                  form\n handling, and Axios for API communication with
+                  interceptors.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Backend Architecture</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  RESTful API built with Node.js and Express.js featuring JWT\n
+                  authentication with httpOnly cookies and refresh tokens,\n
+                  role-based access control middleware (Admin, Instructor,\n
+                  Student), MongoDB with Mongoose ODM for flexible data
+                  modeling,\n Socket.io server for real-time chat and
+                  notifications, Multer\n for video and file uploads, bcryptjs
+                  for password hashing, and\n comprehensive error handling with
+                  custom error classes.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Database Schema</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  User collection with authentication, roles, and profile
+                  data,\n Course collection with curriculum, pricing, and
+                  instructor\n information, Enrollment collection tracking
+                  student course\n access and progress, Payment collection with
+                  transaction\n details and SSL Commerz data, Video collection
+                  with metadata,\n URLs, and progress tracking, ChatMessage
+                  collection for group\n chat history, ChatRoom collection for
+                  course-specific\n conversations, and Notification collection
+                  for admin alerts.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Payment Processing Flow</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  SSL Commerz integration with sandbox and production
+                  environment\n support, course purchase initiation creating
+                  payment session,\n redirect to SSL Commerz payment gateway,
+                  support for multiple\n payment methods (mobile banking, cards,
+                  internet banking),\n secure callback handling for success,
+                  failure, and\n cancellation, automatic course enrollment upon
+                  successful\n payment, transaction logging with complete audit
+                  trail, payment\n verification with server-to-server
+                  validation, and email\n notifications for purchase
+                  confirmations.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Video Delivery System</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Cloudinary integration for video upload and storage with\n
+                  automatic transcoding to multiple formats, adaptive bitrate\n
+                  streaming for optimal playback quality, signed URLs for
+                  secure\n video access preventing unauthorized viewing,
+                  Video.js player\n with custom controls and branding, progress
+                  tracking saving\n current playback position, resume
+                  functionality allowing\n students to continue from last
+                  position, thumbnail generation\n for video previews, and CDN
+                  delivery for fast global access.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Real-time Chat System</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Socket.io implementation with WebSocket protocol for
+                  low-latency\n communication, course-specific chat rooms with
+                  automatic joining\n upon enrollment, message broadcasting to
+                  all room participants,\n typing indicators showing when users
+                  are composing messages,\n online/offline status tracking,
+                  message persistence with\n MongoDB for chat history, file
+                  attachment support with\n Cloudinary storage, and moderation
+                  capabilities for instructors.
+                </p>
+              </div>
+            </div>
+
+            <div class="row gx-5 mt-5">
+              <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h2 class="heading-font-family text-uppercase text-8 fw-600 mb-4">
+                  Results
+                </h2>
+              </div>
+              <div class="col-md-8 col-lg-9 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Successfully delivered a production-ready Learning
+                  Management\n System with comprehensive features for modern
+                  online education,\n secure payment processing, and real-time
+                  collaboration.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Student Learning Experience
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Browse and search courses with advanced filtering by
+                  category,\n price, and instructor. Secure course purchase via
+                  SSL Commerz\n with multiple payment methods (bKash, Nagad,
+                  cards). Access\n enrolled courses with video lessons and
+                  downloadable materials.\n Advanced video playback with resume
+                  functionality and progress\n tracking. Real-time group chat
+                  with course members for\n discussions and collaboration. Track
+                  learning progress with\n detailed analytics. Download course
+                  completion certificates.\n Manage user profile and view
+                  payment history.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Admin Management Dashboard
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Comprehensive dashboard with revenue statistics, user growth\n
+                  metrics, and course performance analytics. Complete course\n
+                  management with create, edit, delete, and publish controls.\n
+                  Video upload with Cloudinary integration and thumbnail\n
+                  generation. User management with role assignment (Admin,\n
+                  Instructor, Student) and account status control. Payment\n
+                  transaction monitoring with detailed transaction history and\n
+                  revenue reports. Enrollment tracking showing student
+                  progress\n across all courses. Content moderation tools for
+                  managing chat\n and course content. Real-time notifications
+                  for new\n enrollments, payments, and student activity.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Payment &amp; Transaction System
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  SSL Commerz integration supporting bKash, Nagad,
+                  credit/debit\n cards, and internet banking. Secure payment
+                  flow with\n server-to-server validation ensuring transaction
+                  integrity.\n Automatic course enrollment upon successful
+                  payment completion.\n Comprehensive transaction logging with
+                  complete audit trail.\n Payment failure handling with retry
+                  mechanisms. Email\n notifications for purchase confirmations
+                  and receipts. Admin\n dashboard for monitoring all
+                  transactions and revenue.\n Refund management system for
+                  handling payment disputes.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Video Content Delivery</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Cloudinary video storage with automatic transcoding to
+                  multiple\n formats and resolutions. Advanced video player
+                  built with\n Video.js featuring play/pause, seek, volume,
+                  quality selection,\n playback speed, and fullscreen controls.
+                  Adaptive bitrate\n streaming automatically adjusting quality
+                  based on network\n conditions. Progress tracking saving
+                  current playback position\n in database. Resume functionality
+                  allowing students to continue\n from last watched position.
+                  Secure signed URLs preventing\n unauthorized video access.
+                  Thumbnail generation for video\n previews. CDN delivery via
+                  Cloudflare for fast global access.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Live Group Chat &amp; Collaboration
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Real-time group chat using Socket.io with instant message\n
+                  delivery. Course-specific chat rooms automatically created
+                  for\n each course. Access control ensuring only enrolled
+                  students can\n join chat. Message persistence with MongoDB for
+                  complete chat\n history. Typing indicators showing when users
+                  are composing\n messages. Online/offline status tracking for
+                  all participants.\n File sharing within chat with Cloudinary
+                  storage. Instructor\n moderation tools for managing
+                  discussions. Message notifications\n for new chat activity.
+                  Search functionality for finding past\n messages.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">
+                  Performance &amp; Scalability
+                </h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  Average API response time under 200ms through database
+                  indexing\n and query optimization. Real-time chat with
+                  Socket.io handling\n thousands of concurrent connections.
+                  Video streaming with\n adaptive bitrate ensuring smooth
+                  playback. TypeScript providing\n type safety and reducing
+                  runtime errors. Code splitting and\n lazy loading for improved
+                  initial page load. Responsive design\n working seamlessly on
+                  desktop, tablet, and mobile. Database\n connection pooling for
+                  efficient resource usage. CDN delivery\n for static assets and
+                  video content.
+                </p>
+                <h4 class="text-5 fw-600 mt-4 mb-3">Security &amp; Compliance</h4>
+                <p class="text-6" style="text-align: justify; line-height: 1.6; hyphens: auto">
+                  JWT authentication with httpOnly cookies preventing XSS
+                  attacks.\n Role-based access control ensuring proper
+                  authorization.\n bcrypt password hashing with salt rounds for
+                  secure storage.\n SSL Commerz PCI DSS compliance for payment
+                  security. Input\n validation and sanitization preventing
+                  injection attacks. CORS\n configuration for secure
+                  cross-origin requests. Rate limiting\n on API endpoints
+                  preventing abuse. Signed video URLs preventing\n unauthorized
+                  content access. Secure WebSocket connections with\n
+                  authentication. Comprehensive error logging without exposing\n
+                  sensitive data.
+                </p>
+              </div>
+            </div>
+
+            <div class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+              <hr class="opacity-1 mt-5">
+              <div class="row gy-3">
+                <div class="col-sm-6">
+                  <a class="d-inline-block link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="../projects/byte-details.html">
+                    <p class="heading-font-family text-uppercase fw-500 mb-0">
+                      Prev Project
+                    </p>
+                    <h4 class="text-7 fw-600 mb-0">Byte - Social Platform</h4>
+                  </a>
+                </div>
+                <div class="col-sm-6 text-end">
+                  <a class="d-inline-block link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="../projects/tayaaki-details.html">
+                    <p class="heading-font-family text-uppercase fw-500 mb-0">
+                      Next Project
+                    </p>
+                    <h4 class="text-7 fw-600 mb-0">Tayaaki - E-commerce</h4>
+                  </a>
+                </div>
+              </div>
+              <hr class="opacity-1">
+            </div>
+          </div>
+        </section>
+        <!-- Services end -->
+
+        <!-- Separator -->
+        <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+          <hr class="vr heading-separator-line mb-0">
+        </div>
+        <!-- Separator End -->
+
+        <!-- Let's Talk
+    ============================================= -->
+        <section class="section">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-10 col-xl-9">
+                <span class="position-relative d-inline-block wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                  <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2"><i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i></span>
+                  <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759511647/mhrrony-contact_hf1dyc.jpg" alt="">
+                </span>
+                <h3 class="text-9 lh-base mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                  I enjoy discussing
+                  <span class="text-primary">new LMS projects</span> and
+                  educational technology challenges.
+                  <span class="text-body-tertiary">Please share your educational platform requirements and
+                    feature preferences so</span>
+                  I can provide the best solution for your learning management
+                  needs.
+                </h3>
+                <div class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                  <a class="btn btn-primary" href="../pages/contact.html">Get In Touch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Let's Talk end -->
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+      <footer id="footer" class="section mt-4">
+        <div class="container">
+          <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+            <div class="col-lg-9">
+              <hr class="opacity-1">
+              <div class="social-links text-5 fw-500 d-flex justify-content-center mb-3">
+                <a href="https://www.instagram.com/mhr__rony" target="_blank">Instagram</a>
+                <a href="https://wa.me/8801610769804" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/Mhr.Rony0358" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/mhrrony/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/MHR-RONY" target="_blank">GitHub</a>
+                <a href="https://devstationit.com" target="_blank">DevStation IT</a>
+              </div>
+              <hr class="opacity-1 mb-5">
+            </div>
+          </div>
+          <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+            Copyright © 2025
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Mhr Rony</a>. All Rights Reserved.
+          </p>
+          <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+            Designed by
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://www.mhrrony.com/">Mhr Rony</a>
+          </p>
+          <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#terms-service" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" href="#top" style="--progress: 16.298258123663032%; display: inline;"></a>
+
+    <!-- Privacy - Modal
+================================== -->
+    <div id="privacy" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Privacy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              At Mhr Rony's Fullstack Development Services, your privacy is of
+              utmost importance to me. This Privacy Policy outlines how I
+              collect, use, and protect your personal information when you visit
+              my website or engage my web development services.
+            </p>
+            <h5 class="text-5 mt-4">Information Collection</h5>
+            <ul class="lh-lg">
+              <li>
+                Contact information including name, email address, and phone
+                number when you submit project inquiries or contact forms.
+              </li>
+              <li>
+                Project requirements and technical specifications shared during
+                consultation and development phases.
+              </li>
+              <li>
+                Website analytics data to improve user experience and service
+                quality.
+              </li>
+              <li>
+                Communication records including emails, messages, and meeting
+                notes related to your web development projects.
+              </li>
+            </ul>
+            <h5 class="text-5 mt-4">How I Use Your Information</h5>
+            <ul class="lh-lg">
+              <li>
+                To provide MERN stack development services and technical
+                consultation tailored to your project needs.
+              </li>
+              <li>
+                To communicate project updates, deliverables, and technical
+                documentation throughout the development process.
+              </li>
+              <li>
+                To maintain project repositories, backup systems, and
+                development environments securely.
+              </li>
+              <li>
+                To improve my web development services and portfolio showcase
+                based on client feedback and project outcomes.
+              </li>
+            </ul>
+            <h5 class="text-5 mt-4">Data Security &amp; Protection</h5>
+            <p>
+              All client data is protected using industry-standard security
+              measures including encrypted communications, secure development
+              environments, and confidential project handling. I do not share
+              your information with third parties without explicit consent.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Privacy - Modal End -->
+
+    <!-- Terms of Service - Modal
+================================== -->
+    <div id="terms-service" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Terms of Service</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Welcome to Mhr Rony's Fullstack Web Development Services. By
+              engaging my MERN stack development services or using this website,
+              you agree to comply with and be bound by the following terms and
+              conditions of use.
+            </p>
+            <h3 class="mb-3 mt-4 mt-4">Service Terms</h3>
+            <p>
+              I provide professional fullstack web development services
+              specializing in MongoDB, Express.js, React, and Node.js
+              technologies. All services include code development, testing,
+              deployment assistance, and basic technical support.
+            </p>
+            <h5 class="text-5 mt-4">Project Scope &amp; Development Process</h5>
+            <p>
+              Each web development project begins with a detailed consultation
+              to define requirements, technical specifications, and project
+              timeline. I follow agile development practices with regular
+              updates and client feedback integration throughout the development
+              cycle.
+            </p>
+            <h5 class="text-5 mt-4">Code Ownership &amp; Intellectual Property</h5>
+            <p>
+              Upon full payment completion, clients receive complete ownership
+              of custom-developed code and project assets. I retain the right to
+              showcase completed projects in my portfolio while respecting
+              client confidentiality agreements.
+            </p>
+            <h5 class="text-5 mt-4">Payment Terms &amp; Project Delivery</h5>
+            <p>
+              Projects typically require 50% upfront payment with the remainder
+              due upon completion. All deliverables include source code,
+              documentation, and deployment guidelines. Support period and
+              maintenance terms are specified in individual project agreements.
+            </p>
+            <h3 class="mb-3 mt-4">Service Standards</h3>
+            <p>
+              I am committed to delivering high-quality, scalable web
+              applications using modern development practices, clean code
+              standards, and comprehensive testing. All projects follow industry
+              best practices for security, performance, and maintainability.
+            </p>
+            <h5 class="text-5 mt-4">Technical Support &amp; Maintenance</h5>
+            <ol class="lh-lg">
+              <li>
+                Initial support period included with all projects covers bug
+                fixes and technical clarifications.
+              </li>
+              <li>
+                Extended maintenance agreements available for ongoing updates,
+                feature additions, and performance optimization.
+              </li>
+              <li>
+                Emergency support available for critical issues affecting live
+                applications and production environments.
+              </li>
+              <li>
+                Code documentation and development guidelines provided to
+                facilitate future modifications and team collaboration.
+              </li>
+              <li>
+                Technology stack recommendations based on project requirements,
+                scalability needs, and long-term maintenance considerations.
+              </li>
+            </ol>
+            <h5 class="text-5 mt-4">Limitation of Liability</h5>
+            <p>
+              While I strive for excellence in all development work, liability
+              is limited to the total project value. Clients are responsible for
+              content, compliance requirements, and business-specific
+              functionality beyond technical implementation.
+            </p>
+            <ol class="lh-lg">
+              <li>
+                Maximum liability for any project is limited to the total fees
+                paid for that specific project.
+              </li>
+              <li>
+                I am not responsible for third-party services, APIs, or external
+                dependencies beyond my control.
+              </li>
+              <li>
+                Clients must ensure their content, data, and business logic
+                comply with applicable laws and regulations.
+              </li>
+              <li>
+                Performance guarantees are based on specified hosting
+                environments and infrastructure configurations.
+              </li>
+              <li>
+                I am not liable for losses due to client-provided content,
+                credentials, or configuration errors.
+              </li>
+              <li>
+                Force majeure events, internet outages, or third-party service
+                failures are outside the scope of liability.
+              </li>
+              <li>
+                Clients should maintain appropriate backups and insurance for
+                critical business applications.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Terms & Policy Modal - End -->
+
+    <!-- Styles Switcher -->
+    <div id="styles-switcher" class="left bg-light-subtle">
+      <h2 class="text-5">Color Switcher</h2>
+      <hr>
+      <ul class="mb-0">
+        <li class="indigo" data-bs-toggle="tooltip" data-path="" aria-label="Indigo" data-bs-original-title="Indigo"></li>
+        <li class="blue" data-bs-toggle="tooltip" data-path="../css/color-blue.css" aria-label="Blue" data-bs-original-title="Blue"></li>
+        <li class="purple" data-bs-toggle="tooltip" data-path="../css/color-purple.css" aria-label="Purple" data-bs-original-title="Purple"></li>
+        <li class="cyan active" data-bs-toggle="tooltip" data-path="../css/color-cyan.css" aria-label="Cyan" data-bs-original-title="Cyan"></li>
+        <li class="red" data-bs-toggle="tooltip" data-path="../css/color-red.css" aria-label="Red" data-bs-original-title="Red"></li>
+        <li class="pink" data-bs-toggle="tooltip" data-path="../css/color-pink.css" aria-label="Pink" data-bs-original-title="Pink"></li>
+        <li class="teal" data-bs-toggle="tooltip" data-path="../css/color-teal.css" aria-label="Teal" data-bs-original-title="Teal"></li>
+        <li class="green" data-bs-toggle="tooltip" data-path="../css/color-green.css" aria-label="Green" data-bs-original-title="Green"></li>
+        <li class="yellow" data-bs-toggle="tooltip" data-path="../css/color-yellow.css" aria-label="Yellow (Default)" data-bs-original-title="Yellow (Default)"></li>
+        <li class="orange" data-bs-toggle="tooltip" data-path="../css/color-orange.css" aria-label="Orange" data-bs-original-title="Orange"></li>
+      </ul>
+      <button class="btn switcher-toggle">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+    <!-- Styles Switcher End -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Parallax Mouse Move -->
+    <script src="../js/parallax.min.js"></script>
+    <!-- Easing -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <!-- Appear -->
+    <script src="../js/jquery.appear.min.js"></script>
+    <!-- Images Loaded -->
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <!-- Counter -->
+    <script src="../js/jquery.countTo.min.js"></script>
+    <!-- Typed -->
+    <script src="../js/typed.min.js"></script>
+    <!-- WOW animation -->
+    <script src="../js/wow.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- isotope Portfolio Filter -->
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="../js/switcher-enhanced.js"></script>
+    <!-- Custom Script -->
+    <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const t = document.getElementById("theme-toggle"),
+          e = document.documentElement,
+          o = document.querySelector(".theme-icon-dark"),
+          n = document.querySelector(".theme-icon-light"),
+          d = localStorage.getItem("theme") || "dark";
+        e.setAttribute("data-bs-theme", d),
+          l(d),
+          t.addEventListener("click", function (t) {
+            t.preventDefault();
+            const o = e.getAttribute("data-bs-theme"),
+              n = "dark" === o ? "light" : "dark";
+            e.setAttribute("data-bs-theme", n),
+              localStorage.setItem("theme", n),
+              l(n);
+          });
+        function l(t) {
+          "dark" === t
+            ? ((o.style.display = "inline-block"), (n.style.display = "none"))
+            : ((o.style.display = "none"), (n.style.display = "inline-block"));
+        }
+      });
+    </script>
+  
+
+</body></html>

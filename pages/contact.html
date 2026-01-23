@@ -1,0 +1,805 @@
+<html lang="en" data-bs-theme="dark">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="/favicon.ico" rel="icon">
+    <title>Contact | Mhr Rony - Fullstack Web Developer Portfolio</title>
+    <meta name="description" content="Get in touch with Mhr Rony for MERN stack development, DevOps services, and web development projects.">
+    <meta name="author" content="Mhr Rony">
+    <link rel="canonical" href="https://mhrrony.com/pages/contact.html">
+
+    <!-- Stylesheet
+============================== -->
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.min.css">
+    <!-- Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <!-- Colors Css -->
+    <link id="color-switcher" type="text/css" rel="stylesheet" href="../css/color-cyan.css">
+    <!-- Load saved color immediately -->
+    <script>
+      (function () {
+        var savedColorName = localStorage.getItem("portfolioColorName");
+        if (savedColorName) {
+          var colorSwitcher = document.getElementById("color-switcher");
+          if (colorSwitcher) {
+            var currentHref = colorSwitcher.getAttribute("href");
+            var correctPath = currentHref.startsWith("../")
+              ? "../css/color-" + savedColorName + ".css"
+              : "css/color-" + savedColorName + ".css";
+            colorSwitcher.setAttribute("href", correctPath);
+          }
+        }
+      })();
+    </script>
+    <style>
+      .theme-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+      .theme-toggle-btn:hover {
+        transform: scale(1.1);
+      }
+      .theme-toggle-btn i {
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+      [data-bs-theme="light"] {
+        --bs-body-bg: #fff;
+        --bs-body-color: #212529;
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] body {
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] #main-wrapper {
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] .bg-dark {
+        background-color: #f8f9fa !important;
+      }
+      [data-bs-theme="light"] .text-light,
+      [data-bs-theme="light"] .text-white {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] h1:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h2:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] li:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] p:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"]
+        span:not(.text-primary):not(.text-secondary):not(.text-primary *) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-10:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-11:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-7:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-8:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-9:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-primary,
+      [data-bs-theme="light"] .text-primary * {
+        color: var(--bs-primary);
+      }
+      [data-bs-theme="light"] .text-secondary {
+        color: var(--bs-secondary);
+      }
+      [data-bs-theme="light"] .primary-menu {
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link.active,
+      [data-bs-theme="light"] .primary-menu .nav-link:hover {
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] .dropdown-menu {
+        background-color: #fff !important;
+        border: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .dropdown-item {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .dropdown-item:hover {
+        background-color: #f8f9fa !important;
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] #header.sticky-top-slide {
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      [data-bs-theme="light"] .btn-outline-light {
+        border-color: var(--bs-body-color);
+        color: var(--bs-body-color);
+      }
+      [data-bs-theme="light"] .btn-outline-light:hover {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        color: #000;
+      }
+      [data-bs-theme="light"] footer {
+        border-top: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .featured-box {
+        background-color: #fff !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      [data-bs-theme="light"] hr {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+      }
+      [data-bs-theme="light"] .form-control {
+        background-color: #fff !important;
+        border: 1px solid #dee2e6 !important;
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .form-control:focus {
+        background-color: #fff !important;
+        border-color: var(--bs-primary) !important;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- Preloader -->
+    <div class="preloader" role="status" aria-live="polite" style="display: none;">
+      <div class="text-loader" style="display: none;">
+        <span>M</span><span>H</span><span>R</span><span class="space">&nbsp;</span><span>R</span><span>O</span><span>N</span><span>Y</span>
+      </div>
+      <span class="sr-only">Loading...</span>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper
+=============================== -->
+    <div id="main-wrapper" class="dotted-background">
+      <!-- Header
+  ============================ -->
+      <header id="header" class="sticky-top-slide">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500 sticky-on">
+          <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="../index.html">
+              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="">
+            </a>
+            <!-- Logo End -->
+            <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">Services<i class="arrow"></i></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../pages/services.html">All Services</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="../services/react-development-details.html">React Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/fullstack-development-details.html">Full-Stack Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/nodejs-backend-details.html">Node.js Backend</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/devops-deployment-details.html">DevOps &amp; Deployment</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/ecommerce-solutions-details.html">E-commerce Solutions</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/web-consulting-details.html">Web Consulting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">Projects<i class="arrow"></i></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/devstation-details.html">DevStation IT - Corporate</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/codecampus-details.html">Code Campus - Course Platform</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/tayaaki-details.html">Tayaaki - E-commerce</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/byte-details.html">Byte - Social Platform</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/izabela-details.html">Izabela - AI Companion</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/bloodconnect-details.html">BloodConnect</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/zerohunger-details.html">Zero Hunger</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+              <span></span><span></span><span></span>
+            </button>
+            <!-- Hamburger Menu Button End -->
+
+            <!-- Hire me Button -->
+            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+            <!-- Hire me Button End -->
+            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn ms-2" style="
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              " title="Toggle Dark/Light Mode"><i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i><i class="fa-solid fa-sun theme-icon-light" style="display: none"></i></a>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
+
+      <!-- Page Header
+	============================================= -->
+      <section class="page-header">
+        <div class="container text-center py-5 mt-5">
+          <!-- Page Title -->
+          <p class="text-primary text-4 fw-500 mt-5 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+            Get in Touch
+          </p>
+          <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+            Contact
+          </h2>
+          <hr class="vr heading-separator-line mb-0 wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+        </div>
+      </section>
+      <!-- Page Header end -->
+
+      <!-- Content
+  ============================================= -->
+      <div id="content" role="main">
+        <!-- Contact
+    ============================================= -->
+        <section id="contact" class="section pt-0">
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+                <h3 class="text-9 lh-base mb-5">
+                  <span class="position-relative d-inline-block me-1 mb-n2">
+                    <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-1 me-1"><i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i></span>
+                    <img class="img-fluid d-flex rounded-circle mb-n1" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753136836/profile-sm_hatxry.jpg" alt="">
+                  </span>
+                  <span class="text-primary">I enjoy discussing new projects challenges.</span>
+                  <span class="text-body-tertiary">Please share as much info, as possible so i can get the
+                    most out of our first catch-up.</span>
+                </h3>
+                <h4 class="mb-1">Living In:</h4>
+                <p class="text-5">Dhaka, Bangladesh</p>
+
+                <h4 class="mb-1">WhatsApp:</h4>
+                <p class="text-5">
+                  <a href="https://wa.me/8801610769804" target="_blank" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                    <i class="fab fa-whatsapp me-2"></i>+8801610769804
+                  </a>
+                </p>
+
+                <h4 class="mb-1">Email:</h4>
+                <p class="text-5">contact@mhrrony.com</p>
+              </div>
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                <h3 class="text-10 fw-600 mb-5">Send me a note</h3>
+                <!-- Contact Form -->
+                <form id="contact-form" class="form-border">
+                  <div class="mb-4">
+                    <label class="form-label text-5" for="name">Your Name:</label>
+                    <input id="name" name="name" type="text" class="form-control text-5 py-0" required="" placeholder="">
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label text-5" for="email">Your Email:</label>
+                    <input id="email" name="email" type="email" class="form-control text-5 py-0" required="" placeholder="">
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label text-5" for="message">Describe what you need:</label>
+                    <textarea id="message" name="message" class="form-control text-5 py-0" rows="4" required="" placeholder=""></textarea>
+                  </div>
+                  <button id="submit-btn" class="btn btn-primary" type="submit">
+                    <span class="button-text">Send Message</span>
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                  </button>
+
+                  <!-- Alert Messages -->
+                  <div id="alert-success" class="alert alert-success mt-3 d-none" role="alert">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Your message has been sent successfully! I'll get back to
+                    you soon.
+                  </div>
+                  <div id="alert-error" class="alert alert-danger mt-3 d-none" role="alert">
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    <span id="error-message">Sorry, there was an error sending your message. Please
+                      try again.</span>
+                  </div>
+                </form>
+                <!-- Contact Form End -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact end -->
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+      <footer id="footer" class="section mt-4">
+        <div class="container">
+          <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+            <div class="col-lg-9">
+              <hr class="opacity-1">
+              <div class="social-links text-5 fw-500 d-flex justify-content-center mb-3">
+                <a href="https://www.instagram.com/mhr__rony" target="_blank">Instagram</a>
+                <a href="https://wa.me/8801610769804" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/Mhr.Rony0358" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/mhrrony/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/MHR-RONY" target="_blank">GitHub</a>
+                <a href="https://devstationit.com" target="_blank">DevStation IT</a>
+              </div>
+              <hr class="opacity-1 mb-5">
+            </div>
+          </div>
+          <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+            Copyright © 2025
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Mhr Rony</a>. All Rights Reserved.
+          </p>
+          <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+            Designed by
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://www.mhrrony.com/">Mhr Rony</a>
+          </p>
+          <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#terms-service" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" href="#top" style="--progress: 100%; display: inline;"></a>
+
+    <!-- Privacy - Modal
+================================== -->
+    <div id="privacy" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Privacy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              At Mhr Rony's Fullstack Development Services, your privacy is of
+              utmost importance to me. This Privacy Policy outlines how I
+              collect, use, and protect your personal information when you visit
+              my website or engage my web development services.
+            </p>
+            <h5 class="text-5 mt-4">Information Collection</h5>
+            <ul class="lh-lg">
+              <li>
+                Contact information including name, email address, and phone
+                number when you submit project inquiries or contact forms.
+              </li>
+              <li>
+                Project requirements and technical specifications shared during
+                consultation and development phases.
+              </li>
+              <li>
+                Website analytics data to improve user experience and service
+                quality.
+              </li>
+              <li>
+                Communication records including emails, messages, and meeting
+                notes related to your web development projects.
+              </li>
+            </ul>
+            <h5 class="text-5 mt-4">How I Use Your Information</h5>
+            <ul class="lh-lg">
+              <li>
+                To provide MERN stack development services and technical
+                consultation tailored to your project needs.
+              </li>
+              <li>
+                To communicate project updates, deliverables, and technical
+                documentation throughout the development process.
+              </li>
+              <li>
+                To maintain project repositories, backup systems, and
+                development environments securely.
+              </li>
+              <li>
+                To improve my web development services and portfolio showcase
+                based on client feedback and project outcomes.
+              </li>
+            </ul>
+            <h5 class="text-5 mt-4">Data Security &amp; Protection</h5>
+            <p>
+              All client data is protected using industry-standard security
+              measures including encrypted communications, secure development
+              environments, and confidential project handling. I do not share
+              your information with third parties without explicit consent.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Privacy - Modal End -->
+
+    <!-- Terms of Service - Modal
+================================== -->
+    <div id="terms-service" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Terms of Service</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Welcome to Mhr Rony's Fullstack Web Development Services. By
+              engaging my MERN stack development services or using this website,
+              you agree to comply with and be bound by the following terms and
+              conditions of use.
+            </p>
+            <h3 class="mb-3 mt-4 mt-4">Service Terms</h3>
+            <p>
+              I provide professional fullstack web development services
+              specializing in MongoDB, Express.js, React, and Node.js
+              technologies. All services include code development, testing,
+              deployment assistance, and basic technical support.
+            </p>
+            <h5 class="text-5 mt-4">Project Scope &amp; Development Process</h5>
+            <p>
+              Each web development project begins with a detailed consultation
+              to define requirements, technical specifications, and project
+              timeline. I follow agile development practices with regular
+              updates and client feedback integration throughout the development
+              cycle.
+            </p>
+            <h5 class="text-5 mt-4">Code Ownership &amp; Intellectual Property</h5>
+            <p>
+              Upon full payment completion, clients receive complete ownership
+              of custom-developed code and project assets. I retain the right to
+              showcase completed projects in my portfolio while respecting
+              client confidentiality agreements.
+            </p>
+            <h5 class="text-5 mt-4">Payment Terms &amp; Project Delivery</h5>
+            <p>
+              Projects typically require 50% upfront payment with the remainder
+              due upon completion. All deliverables include source code,
+              documentation, and deployment guidelines. Support period and
+              maintenance terms are specified in individual project agreements.
+            </p>
+            <h3 class="mb-3 mt-4">Service Standards</h3>
+            <p>
+              I am committed to delivering high-quality, scalable web
+              applications using modern development practices, clean code
+              standards, and comprehensive testing. All projects follow industry
+              best practices for security, performance, and maintainability.
+            </p>
+            <h5 class="text-5 mt-4">Technical Support &amp; Maintenance</h5>
+            <ol class="lh-lg">
+              <li>
+                Initial support period included with all projects covers bug
+                fixes and technical clarifications.
+              </li>
+              <li>
+                Extended maintenance agreements available for ongoing updates,
+                feature additions, and performance optimization.
+              </li>
+              <li>
+                Emergency support available for critical issues affecting live
+                applications and production environments.
+              </li>
+              <li>
+                Code documentation and development guidelines provided to
+                facilitate future modifications and team collaboration.
+              </li>
+              <li>
+                Technology stack recommendations based on project requirements,
+                scalability needs, and long-term maintenance considerations.
+              </li>
+            </ol>
+            <h5 class="text-5 mt-4">Limitation of Liability</h5>
+            <p>
+              While I strive for excellence in all development work, liability
+              is limited to the total project value. Clients are responsible for
+              content, compliance requirements, and business-specific
+              functionality beyond technical implementation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Terms & Policy Modal - End -->
+
+    <!-- Styles Switcher -->
+    <div id="styles-switcher" class="left bg-light-subtle">
+      <h2 class="text-5">Color Switcher</h2>
+      <hr>
+      <ul class="mb-0">
+        <li class="indigo" data-bs-toggle="tooltip" data-path="" aria-label="Indigo" data-bs-original-title="Indigo"></li>
+        <li class="blue" data-bs-toggle="tooltip" data-path="../css/color-blue.css" aria-label="Blue" data-bs-original-title="Blue"></li>
+        <li class="purple" data-bs-toggle="tooltip" data-path="../css/color-purple.css" aria-label="Purple" data-bs-original-title="Purple"></li>
+        <li class="cyan active" data-bs-toggle="tooltip" data-path="../css/color-cyan.css" aria-label="Cyan" data-bs-original-title="Cyan"></li>
+        <li class="red" data-bs-toggle="tooltip" data-path="../css/color-red.css" aria-label="Red" data-bs-original-title="Red"></li>
+        <li class="pink" data-bs-toggle="tooltip" data-path="../css/color-pink.css" aria-label="Pink" data-bs-original-title="Pink"></li>
+        <li class="teal" data-bs-toggle="tooltip" data-path="../css/color-teal.css" aria-label="Teal" data-bs-original-title="Teal"></li>
+        <li class="green" data-bs-toggle="tooltip" data-path="../css/color-green.css" aria-label="Green" data-bs-original-title="Green"></li>
+        <li class="yellow" data-bs-toggle="tooltip" data-path="../css/color-yellow.css" aria-label="Yellow (Default)" data-bs-original-title="Yellow (Default)"></li>
+        <li class="orange" data-bs-toggle="tooltip" data-path="../css/color-orange.css" aria-label="Orange" data-bs-original-title="Orange"></li>
+      </ul>
+      <button class="btn switcher-toggle">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+    <!-- Styles Switcher End -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Parallax Mouse Move -->
+    <script src="../js/parallax.min.js"></script>
+    <!-- Easing -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <!-- Appear -->
+    <script src="../js/jquery.appear.min.js"></script>
+    <!-- Images Loaded -->
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <!-- Counter -->
+    <script src="../js/jquery.countTo.min.js"></script>
+    <!-- Typed -->
+    <script src="../js/typed.min.js"></script>
+    <!-- WOW animation -->
+    <script src="../js/wow.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- isotope Portfolio Filter -->
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="../js/switcher-enhanced.js"></script>
+    <!-- Custom Script -->
+    <script src="../js/main.js"></script>
+
+    <!-- Contact Form Handler -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contact-form");
+        const submitBtn = document.getElementById("submit-btn");
+        const successAlert = document.getElementById("alert-success");
+        const errorAlert = document.getElementById("alert-error");
+        const errorMessage = document.getElementById("error-message");
+
+        if (
+          !form ||
+          !submitBtn ||
+          !successAlert ||
+          !errorAlert ||
+          !errorMessage
+        ) {
+          console.error("Form elements not found");
+          return;
+        }
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          console.log("Form submission started");
+
+          // Get form data
+          const formData = {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            message: document.getElementById("message").value.trim(),
+          };
+
+          console.log("Form data:", formData);
+
+          // Hide alerts
+          successAlert.classList.add("d-none");
+          errorAlert.classList.add("d-none");
+
+          // Show loading state
+          submitBtn.disabled = true;
+          const buttonText = submitBtn.querySelector(".button-text");
+          const spinner = submitBtn.querySelector(".spinner-border");
+          const originalText = buttonText.textContent;
+
+          buttonText.textContent = "Sending...";
+          spinner.classList.remove("d-none");
+
+          try {
+            console.log("Sending request to /api/contact");
+
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
+            });
+
+            console.log("Response status:", response.status);
+
+            let result;
+            try {
+              result = await response.json();
+              console.log("Response data:", result);
+            } catch (parseError) {
+              console.error("JSON parse error:", parseError);
+              throw new Error(
+                `Server returned ${response.status}: ${response.statusText}`
+              );
+            }
+
+            if (response.ok && result.success) {
+              // Success
+              console.log("Email sent successfully");
+              successAlert.classList.remove("d-none");
+              form.reset();
+
+              // Update button to show success
+              buttonText.textContent = "Send Successfully";
+              spinner.classList.add("d-none");
+              submitBtn.classList.remove("btn-primary");
+              submitBtn.classList.add("btn-success");
+
+              // Reset button after 3 seconds
+              setTimeout(() => {
+                buttonText.textContent = originalText;
+                submitBtn.classList.remove("btn-success");
+                submitBtn.classList.add("btn-primary");
+                submitBtn.disabled = false;
+              }, 3000);
+
+              return; // Don't reset button in finally block for success case
+            } else {
+              // Error from server
+              console.error("Server error:", response.status, result);
+              let errorMsg =
+                result.error ||
+                `Server error (${response.status}): ${response.statusText}`;
+
+              if (response.status === 403) {
+                errorMsg =
+                  "Access denied. Please try again or contact support.";
+              } else if (response.status === 500) {
+                errorMsg = "Server error. Please try again later.";
+              }
+
+              errorMessage.textContent = errorMsg;
+              errorAlert.classList.remove("d-none");
+
+              // Update button to show failure
+              buttonText.textContent = "Send Failed";
+              spinner.classList.add("d-none");
+              submitBtn.classList.remove("btn-primary");
+              submitBtn.classList.add("btn-danger");
+
+              // Reset button after 3 seconds
+              setTimeout(() => {
+                buttonText.textContent = originalText;
+                submitBtn.classList.remove("btn-danger");
+                submitBtn.classList.add("btn-primary");
+                submitBtn.disabled = false;
+              }, 3000);
+
+              return; // Don't reset button in finally block for error case
+            }
+          } catch (error) {
+            // Network or other error
+            console.error("Form submission error:", error);
+            errorMessage.textContent =
+              "Network error. Please check your connection and try again.";
+            errorAlert.classList.remove("d-none");
+
+            // Update button to show failure
+            buttonText.textContent = "Send Failed";
+            spinner.classList.add("d-none");
+            submitBtn.classList.remove("btn-primary");
+            submitBtn.classList.add("btn-danger");
+
+            // Reset button after 3 seconds
+            setTimeout(() => {
+              buttonText.textContent = originalText;
+              submitBtn.classList.remove("btn-danger");
+              submitBtn.classList.add("btn-primary");
+              submitBtn.disabled = false;
+            }, 3000);
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const htmlElement = document.documentElement;
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        htmlElement.setAttribute("data-bs-theme", savedTheme);
+        updateThemeIcon(savedTheme);
+        toggleBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = htmlElement.getAttribute("data-bs-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          htmlElement.setAttribute("data-bs-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+          updateThemeIcon(newTheme);
+        });
+        function updateThemeIcon(theme) {
+          const moonIcon = document.querySelector(".theme-icon-dark");
+          const sunIcon = document.querySelector(".theme-icon-light");
+          if (theme === "dark") {
+            moonIcon.style.display = "inline-block";
+            sunIcon.style.display = "none";
+          } else {
+            moonIcon.style.display = "none";
+            sunIcon.style.display = "inline-block";
+          }
+        }
+      });
+    </script>
+  
+
+</body></html>

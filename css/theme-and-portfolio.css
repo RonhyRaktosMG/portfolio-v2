@@ -1,0 +1,653 @@
+/*
+==================================================================================
+   Theme and Portfolio Custom Styles
+   Author: Mhr Rony
+   Website: https://mhrrony.com
+   Company: DevStation IT (https://devstationit.com)
+   © 2024-2026 Mhr Rony. All Rights Reserved.
+==================================================================================
+*/
+
+/* Theme Toggle Button - Match social icons style */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle-btn i {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Light Mode Styles */
+[data-bs-theme="light"] {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+[data-bs-theme="light"] body {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+/* Light mode keeps dotted background - only set text color */
+[data-bs-theme="light"] #main-wrapper {
+  color: #212529 !important;
+}
+
+[data-bs-theme="light"] .bg-dark {
+  background-color: #f8f9fa !important;
+}
+
+/* Base text colors for light mode */
+[data-bs-theme="light"] .text-white,
+[data-bs-theme="light"] .text-light {
+  color: var(--bs-body-color) !important;
+}
+
+[data-bs-theme="light"] h1:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] h2:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] h3:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] h4:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] h5:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] h6:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] p:not(.text-primary):not(.text-secondary),
+[data-bs-theme="light"] li:not(.text-primary):not(.text-secondary) {
+  color: var(--bs-body-color) !important;
+}
+
+/* Spans that are NOT inside text-primary elements */
+[data-bs-theme="light"]
+  span:not(.text-primary):not(.text-secondary):not(.text-primary *) {
+  color: var(--bs-body-color) !important;
+}
+
+/* Portfolio overlay text - EXCEPTION: keep white and allow color switcher (comes AFTER general rules to override) */
+[data-bs-theme="light"] .portfolio-overlay .text-white,
+[data-bs-theme="light"] .portfolio-overlay .text-light,
+[data-bs-theme="light"] .portfolio-overlay h5,
+[data-bs-theme="light"] .portfolio-overlay span {
+  color: #ffffff !important;
+}
+
+/* Portfolio hover - use color switcher for title only */
+[data-bs-theme="light"] .portfolio-box:hover .portfolio-overlay h5 {
+  color: var(--bs-primary) !important;
+}
+
+/* Text size classes - allow color switcher to work */
+[data-bs-theme="light"]
+  .text-4:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-5:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-6:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-7:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-8:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-9:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-10:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-11:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-12:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-13:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-14:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-15:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-16:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *),
+[data-bs-theme="light"]
+  .text-17:not(.text-primary):not(.text-secondary):not(.portfolio-overlay *) {
+  color: var(--bs-body-color) !important;
+}
+
+[data-bs-theme="light"] .heading-font-family:not(.text-primary) {
+  color: var(--bs-heading-color) !important;
+}
+
+/* Allow text-primary and its children to use the color switcher */
+[data-bs-theme="light"] .text-primary,
+[data-bs-theme="light"] .text-primary * {
+  color: var(--bs-primary);
+}
+
+[data-bs-theme="light"] .text-secondary {
+  color: var(--bs-secondary);
+}
+
+[data-bs-theme="light"] .primary-menu .nav-link {
+  color: var(--bs-body-color) !important;
+}
+
+[data-bs-theme="light"] .primary-menu .nav-link:hover,
+[data-bs-theme="light"] .primary-menu .nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+[data-bs-theme="light"] .dropdown-menu {
+  background-color: #ffffff !important;
+  border: 1px solid #dee2e6;
+}
+
+[data-bs-theme="light"] .dropdown-item {
+  color: var(--bs-body-color) !important;
+}
+
+[data-bs-theme="light"] .dropdown-item:hover {
+  background-color: #f8f9fa !important;
+  color: var(--bs-primary) !important;
+}
+
+[data-bs-theme="light"] #header.sticky-top-slide {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="light"] .btn-outline-light {
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="light"] .btn-outline-light:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #000;
+}
+
+[data-bs-theme="light"] .social-icons a {
+  color: var(--bs-body-color) !important;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-bs-theme="light"] .social-icons a:hover {
+  background-color: var(--bs-primary);
+  color: #000 !important;
+}
+
+[data-bs-theme="light"] footer {
+  border-top: 1px solid #dee2e6;
+}
+
+[data-bs-theme="light"] .portfolio-box {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="light"] .portfolio-box:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+[data-bs-theme="light"] .card,
+[data-bs-theme="light"] .featured-box {
+  background-color: #f8f9fa !important;
+  border-color: #dee2e6 !important;
+}
+
+[data-bs-theme="light"] hr {
+  border-color: #dee2e6 !important;
+  opacity: 1;
+}
+
+[data-bs-theme="light"] #back-to-top {
+  background-color: var(--primary-color, #ffc107);
+  color: #000;
+}
+
+[data-bs-theme="light"] #back-to-top:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+/* Portfolio overlay - FINAL override for white text in light mode */
+[data-bs-theme="light"] .portfolio-overlay-details h5.text-white,
+[data-bs-theme="light"] .portfolio-overlay-details h5.text-white.text-6,
+[data-bs-theme="light"] .portfolio-overlay-details span.text-light,
+[data-bs-theme="light"] .portfolio-overlay-details span.text-light.text-5 {
+  color: #ffffff !important;
+}
+
+/* Portfolio hover - color switcher for title */
+[data-bs-theme="light"]
+  .portfolio-box:hover
+  .portfolio-overlay-details
+  h5.text-white,
+[data-bs-theme="light"]
+  .portfolio-box:hover
+  .portfolio-overlay-details
+  h5.text-white.text-6 {
+  color: var(--bs-primary) !important;
+}
+
+@media (max-width: 991px) {
+  .theme-toggle-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Portfolio Scroll Image Effects */
+.portfolio .portfolio-box .project-scroll-image {
+  overflow: hidden !important;
+  position: relative;
+  width: 416px;
+  height: 739.875px;
+}
+
+.portfolio .portfolio-box .project-scroll-image .project-image {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-height: 1500px !important;
+  object-fit: contain !important;
+  object-position: top;
+  transition: transform 3s ease-in-out !important;
+  transform: translateY(0) !important;
+  display: block !important;
+  filter: none !important;
+}
+
+.portfolio .portfolio-box:hover .project-scroll-image .project-image {
+  transform: translateY(calc(-100% + 739.875px)) !important;
+  filter: none !important;
+}
+
+/* Make sure overlay doesn't block hover on the container */
+.portfolio .portfolio-box .project-scroll-image .portfolio-overlay {
+  pointer-events: none;
+}
+
+.portfolio .portfolio-box .project-scroll-image .portfolio-overlay a,
+.portfolio
+  .portfolio-box
+  .project-scroll-image
+  .portfolio-overlay
+  .portfolio-overlay-details {
+  pointer-events: auto;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1399px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 356px;
+    height: 633.156px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: auto !important;
+    min-height: 1300px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 633.156px)) !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 295.984px;
+    height: 526.422px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: auto !important;
+    min-height: 1100px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 526.422px)) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 336px;
+    height: 597.594px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: auto !important;
+    min-height: 1200px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 597.594px)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 246px;
+    height: 437.516px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: auto !important;
+    min-height: 900px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 437.516px)) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 100%;
+    height: 722px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: auto !important;
+    min-height: 1800px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 722px)) !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 100%;
+    height: 600px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: 1600px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 600px)) !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio .portfolio-box .project-scroll-image {
+    width: 100%;
+    height: 500px;
+  }
+  .portfolio .portfolio-box .project-scroll-image .project-image {
+    height: 1400px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image .project-image {
+    transform: translateY(calc(-100% + 500px)) !important;
+  }
+}
+
+/* Second scrollable image styles */
+.portfolio .portfolio-box .project-scroll-image-2 {
+  overflow: hidden !important;
+  position: relative;
+  width: 416px;
+  height: 624px;
+}
+
+.portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: top;
+  transition: transform 3s ease-in-out !important;
+  transform: translateY(0) !important;
+  display: block !important;
+  filter: none !important;
+}
+
+.portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+  transform: translateY(calc(-100% + 624px)) !important;
+  filter: none !important;
+}
+
+/* Make sure overlay doesn't block hover on the container */
+.portfolio .portfolio-box .project-scroll-image-2 .portfolio-overlay {
+  pointer-events: none;
+}
+
+.portfolio .portfolio-box .project-scroll-image-2 .portfolio-overlay a,
+.portfolio
+  .portfolio-box
+  .project-scroll-image-2
+  .portfolio-overlay
+  .portfolio-overlay-details {
+  pointer-events: auto;
+}
+
+/* Responsive breakpoints for second image */
+@media (max-width: 1399px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 356px;
+    height: 534px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 534px)) !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 295.984px;
+    height: 443.969px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 443.969px)) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 336px;
+    height: 504px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 504px)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 246px;
+    height: 369px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 369px)) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 100%;
+    height: 722px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 722px)) !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 100%;
+    height: 600px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: 1600px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 600px)) !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio .portfolio-box .project-scroll-image-2 {
+    width: 100%;
+    height: 500px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-2 .project-image-2 {
+    height: 1400px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-2 .project-image-2 {
+    transform: translateY(calc(-100% + 500px)) !important;
+  }
+}
+
+/* Fix for regular portfolio images to fit container properly */
+.portfolio
+  .portfolio-box
+  .portfolio-img:not(.project-scroll-image):not(.project-scroll-image-2):not(
+    .project-scroll-image-3
+  )
+  img {
+  object-fit: cover !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Third scrollable image styles - smaller fixed height like Online Store */
+.portfolio .portfolio-box .project-scroll-image-3 {
+  overflow: hidden !important;
+  position: relative;
+  width: 416px;
+  height: 320px;
+}
+
+.portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: top;
+  transition: transform 3s ease-in-out !important;
+  transform: translateY(0) !important;
+  display: block !important;
+  filter: none !important;
+}
+
+.portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+  transform: translateY(calc(-100% + 320px)) !important;
+  filter: none !important;
+}
+
+.portfolio .portfolio-box .project-scroll-image-3 .portfolio-overlay {
+  pointer-events: none;
+}
+
+.portfolio .portfolio-box .project-scroll-image-3 .portfolio-overlay a,
+.portfolio
+  .portfolio-box
+  .project-scroll-image-3
+  .portfolio-overlay
+  .portfolio-overlay-details {
+  pointer-events: auto;
+}
+
+/* Responsive breakpoints for third image */
+@media (max-width: 1399px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 356px;
+    height: 275px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 275px)) !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 295.984px;
+    height: 230px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 230px)) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 336px;
+    height: 260px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 260px)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 246px;
+    height: 190px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 190px)) !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 100%;
+    height: 320px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: auto !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 320px)) !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 100%;
+    height: 270px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: 1300px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 270px)) !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio .portfolio-box .project-scroll-image-3 {
+    width: 100%;
+    height: 225px;
+  }
+  .portfolio .portfolio-box .project-scroll-image-3 .project-image-3 {
+    height: 1100px !important;
+  }
+  .portfolio .portfolio-box:hover .project-scroll-image-3 .project-image-3 {
+    transform: translateY(calc(-100% + 225px)) !important;
+  }
+}

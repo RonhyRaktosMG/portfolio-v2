@@ -1,0 +1,345 @@
+/*
+==================================================================================
+   Solar System Animation Styles
+   Author: Mhr Rony
+   Website: https://mhrrony.com
+   Company: DevStation IT (https://devstationit.com)
+   © 2024-2026 Mhr Rony. All Rights Reserved.
+==================================================================================
+*/
+
+/* Solar System Animation Styles */
+
+.solar-system-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  position: relative;
+  z-index: 10;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sun img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(var(--bs-primary-rgb, 255, 193, 7), 0.2);
+  border-radius: 50%;
+  animation: rotate linear infinite;
+  pointer-events: none;
+}
+
+.orbit-1 {
+  width: 270px;
+  height: 270px;
+  animation-duration: 20s;
+}
+.orbit-2 {
+  width: 300px;
+  height: 300px;
+  animation-duration: 25s;
+}
+.orbit-3 {
+  width: 330px;
+  height: 330px;
+  animation-duration: 30s;
+}
+.orbit-4 {
+  width: 350px;
+  height: 350px;
+  animation-duration: 22s;
+  animation-direction: reverse;
+}
+.orbit-5 {
+  width: 370px;
+  height: 370px;
+  animation-duration: 27s;
+  animation-direction: reverse;
+}
+.orbit-6 {
+  width: 400px;
+  height: 400px;
+  animation-duration: 32s;
+  animation-direction: reverse;
+}
+
+.planet {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* Python - Blue & Yellow */
+.planet-python {
+  background: rgba(55, 118, 171, 0.1);
+  border: 2px solid #3776ab;
+}
+.planet-python i {
+  background: linear-gradient(
+    135deg,
+    #3776ab 0%,
+    #3776ab 50%,
+    #ffd43b 50%,
+    #ffd43b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.planet-python:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: rgba(55, 118, 171, 0.2);
+  box-shadow: 0 0 20px #3776ab;
+}
+.planet-python:hover i {
+  background: linear-gradient(
+    135deg,
+    #3776ab 0%,
+    #3776ab 50%,
+    #ffd43b 50%,
+    #ffd43b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.planet-python:active {
+  background: #3776ab;
+  transform: translateX(-50%) scale(1.2);
+}
+.planet-python:active i {
+  background: #ffd43b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Node.js - Green */
+.planet-node {
+  background: rgba(51, 153, 51, 0.15);
+  border: 2px solid #339933;
+  color: #339933;
+}
+.planet-node:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: #339933;
+  color: #fff;
+  box-shadow: 0 0 20px #339933;
+}
+.planet-node:active {
+  background: #339933;
+  color: #fff;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* JavaScript - Yellow */
+.planet-js {
+  background: rgba(247, 223, 30, 0.15);
+  border: 2px solid #f7df1e;
+  color: #f7df1e;
+}
+.planet-js:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: #f7df1e;
+  color: #000;
+  box-shadow: 0 0 20px #f7df1e;
+}
+.planet-js:active {
+  background: #f7df1e;
+  color: #000;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* React - Cyan */
+.planet-react {
+  background: rgba(97, 218, 251, 0.15);
+  border: 2px solid #61dafb;
+  color: #61dafb;
+}
+.planet-react:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: #61dafb;
+  color: #000;
+  box-shadow: 0 0 20px #61dafb;
+}
+.planet-react:active {
+  background: #61dafb;
+  color: #000;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Database - Green (MongoDB) */
+.planet-database {
+  background: rgba(71, 162, 72, 0.15);
+  border: 2px solid #47a248;
+  color: #47a248;
+}
+.planet-database:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: #47a248;
+  color: #fff;
+  box-shadow: 0 0 20px #47a248;
+}
+.planet-database:active {
+  background: #47a248;
+  color: #fff;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Docker - Blue */
+.planet-docker {
+  background: rgba(36, 150, 237, 0.15);
+  border: 2px solid #2496ed;
+  color: #2496ed;
+}
+.planet-docker:hover {
+  transform: translateX(-50%) scale(1.3);
+  background: #2496ed;
+  color: #fff;
+  box-shadow: 0 0 20px #2496ed;
+}
+.planet-docker:active {
+  background: #2496ed;
+  color: #fff;
+  transform: translateX(-50%) scale(1.2);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Light mode adjustments */
+[data-bs-theme="light"] .orbit {
+  border-color: rgba(var(--bs-primary-rgb, 255, 193, 7), 0.3);
+}
+
+[data-bs-theme="light"] .planet-python {
+  background: rgba(55, 118, 171, 0.15);
+}
+[data-bs-theme="light"] .planet-node {
+  background: rgba(51, 153, 51, 0.2);
+}
+[data-bs-theme="light"] .planet-js {
+  background: rgba(247, 223, 30, 0.25);
+}
+[data-bs-theme="light"] .planet-react {
+  background: rgba(97, 218, 251, 0.25);
+}
+[data-bs-theme="light"] .planet-database {
+  background: rgba(71, 162, 72, 0.2);
+}
+[data-bs-theme="light"] .planet-docker {
+  background: rgba(36, 150, 237, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+  .solar-system-container {
+    width: 340px;
+    height: 340px;
+  }
+  .sun {
+    width: 180px;
+    height: 180px;
+  }
+  .orbit-1 {
+    width: 230px;
+    height: 230px;
+  }
+  .orbit-2 {
+    width: 260px;
+    height: 260px;
+  }
+  .orbit-3 {
+    width: 280px;
+    height: 280px;
+  }
+  .orbit-4 {
+    width: 300px;
+    height: 300px;
+  }
+  .orbit-5 {
+    width: 320px;
+    height: 320px;
+  }
+  .orbit-6 {
+    width: 340px;
+    height: 340px;
+  }
+  .planet {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .solar-system-container {
+    width: 300px;
+    height: 300px;
+  }
+  .sun {
+    width: 160px;
+    height: 160px;
+  }
+  .orbit-1 {
+    width: 210px;
+    height: 210px;
+  }
+  .orbit-2 {
+    width: 230px;
+    height: 230px;
+  }
+  .orbit-3 {
+    width: 250px;
+    height: 250px;
+  }
+  .orbit-4 {
+    width: 270px;
+    height: 270px;
+  }
+  .orbit-5 {
+    width: 285px;
+    height: 285px;
+  }
+  .orbit-6 {
+    width: 300px;
+    height: 300px;
+  }
+  .planet {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
