@@ -1,0 +1,775 @@
+<html lang="en" data-bs-theme="dark"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="/favicon.ico" rel="icon">
+    <title>
+      Django Backend Development Services | Ronhy Raktos - Fullstack Web Developer Portfolio
+    </title>
+    <meta name="description" content="Professional Django backend development services - Building secure and scalable REST APIs with Django and Django REST Framework.">
+    <meta name="author" content="Ronhy Raktos">
+    <link rel="canonical" href="https://mhrrony.com/services/django-backend-development-details.html">
+
+    <!-- Stylesheet
+============================== -->
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.min.css">
+    <!-- Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <!-- Colors Css -->
+    <link id="color-switcher" type="text/css" rel="stylesheet" href="../css/color-cyan.css">
+    <!-- Load saved color immediately -->
+    <script>
+      (function () {
+        var savedColorName = localStorage.getItem("portfolioColorName");
+        if (savedColorName) {
+          var colorSwitcher = document.getElementById("color-switcher");
+          if (colorSwitcher) {
+            var currentHref = colorSwitcher.getAttribute("href");
+            var correctPath = currentHref.startsWith("../")
+              ? "../css/color-" + savedColorName + ".css"
+              : "css/color-" + savedColorName + ".css";
+            colorSwitcher.setAttribute("href", correctPath);
+          }
+        }
+      })();
+    </script>
+
+    <style>
+      .theme-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+      .theme-toggle-btn:hover {
+        transform: scale(1.1);
+      }
+      .theme-toggle-btn i {
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+      [data-bs-theme="light"] {
+        --bs-body-bg: #fff;
+        --bs-body-color: #212529;
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] body {
+        background-color: #fff !important;
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] #main-wrapper {
+        color: #212529 !important;
+      }
+      [data-bs-theme="light"] .bg-dark {
+        background-color: #f8f9fa !important;
+      }
+      [data-bs-theme="light"] .text-light,
+      [data-bs-theme="light"] .text-white {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] h1:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h2:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] h6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] li:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] p:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"]
+        span:not(.text-primary):not(.text-secondary):not(.text-primary *) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-10:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-11:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-3:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-4:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-5:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-6:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-7:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-8:not(.text-primary):not(.text-secondary),
+      [data-bs-theme="light"] .text-9:not(.text-primary):not(.text-secondary) {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .text-primary,
+      [data-bs-theme="light"] .text-primary * {
+        color: var(--bs-primary);
+      }
+      [data-bs-theme="light"] .text-secondary {
+        color: var(--bs-secondary);
+      }
+      [data-bs-theme="light"] .primary-menu {
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .primary-menu .nav-link.active,
+      [data-bs-theme="light"] .primary-menu .nav-link:hover {
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] .dropdown-menu {
+        background-color: #fff !important;
+        border: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .dropdown-item {
+        color: var(--bs-body-color) !important;
+      }
+      [data-bs-theme="light"] .dropdown-item:hover {
+        background-color: #f8f9fa !important;
+        color: var(--bs-primary) !important;
+      }
+      [data-bs-theme="light"] #header.sticky-top-slide {
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      [data-bs-theme="light"] .btn-outline-light {
+        border-color: var(--bs-body-color);
+        color: var(--bs-body-color);
+      }
+      [data-bs-theme="light"] .btn-outline-light:hover {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        color: #000;
+      }
+      [data-bs-theme="light"] footer {
+        border-top: 1px solid #dee2e6;
+      }
+      [data-bs-theme="light"] .featured-box {
+        background-color: #fff !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      [data-bs-theme="light"] hr {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <!-- Preloader -->
+    <div class="preloader" role="status" aria-live="polite" style="display: none;">
+      <div class="text-loader" style="display: none;">
+        <span>R</span><span>O</span><span>N</span><span>H</span><span>Y</span><span class="space">&nbsp;</span><span>R</span><span>A</span><span>K</span><span>T</span><span>O</span><span>S</span>
+      </div>
+      <span class="sr-only">Loading...</span>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper
+=============================== -->
+    <div id="main-wrapper" class="dotted-background">
+      <!-- Header
+  ============================ -->
+      <header id="header" class="sticky-top-slide">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500">
+          <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="../index.html">
+              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="">
+            </a>
+            <!-- Logo End -->
+            <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#">Services<i class="arrow"></i></a>
+                  <ul class="dropdown-menu" style="display: none;">
+                    <li>
+                      <a class="dropdown-item" href="../pages/services.html">All Services</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item active" href="../services/django-backend-development-details.html">Django Backend Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/flutter-mobile-app-development-details.html">Flutter Mobile App Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/flutter-desktop-app-development-details.html">Flutter Desktop App Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/database-design-details.html">Database Design</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/deployment-hosting-details.html">Deployment & Hosting</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../services/algorithms-problem-solving-details.html">Algorithms & Problem Solving</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#">Projects<i class="arrow"></i></a>
+                  <ul class="dropdown-menu" style="">
+                    <li>
+                      <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/devstation-details.html">DevStation IT - Corporate</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../projects/codecampus-details.html">Code Campus - Course Platform</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Hire me Button -->
+            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+            <!-- Hire me Button End -->
+            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn ms-2" style="
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              " title="Toggle Dark/Light Mode"><i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i><i class="fa-solid fa-sun theme-icon-light" style="display: none"></i></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+              <span></span> <span></span> <span></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
+
+      <!-- Page Header
+	============================================= -->
+      <section class="page-header">
+        <div class="container text-center py-5 mt-5">
+          <!-- Page Title -->
+          <p class="text-primary text-4 fw-500 mt-5 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+            Service Details
+          </p>
+          <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+            Django Backend Development
+          </h2>
+          <hr class="vr heading-separator-line mb-0 wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+        </div>
+      </section>
+      <!-- Page Header end -->
+
+      <!-- Content
+  ============================================= -->
+      <div id="content" role="main">
+        <!-- Service Details
+    ============================================= -->
+        <section class="section pt-0">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <h3 class="text-9 fw-600 lh-base mb-5 text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                  Django Backend Development
+                  <span class="text-body-tertiary">services that build</span>
+                  secure and scalable REST APIs.
+                </h3>
+              </div>
+            </div>
+            <div class="row g-5 text-center text-lg-start">
+              <div class="col-lg-5 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <img class="img-fluid rounded-5" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766513406/wmremove-transformed_1_e1zc3c.png" alt="">
+              </div>
+              <div class="col-lg-7">
+                <h3 class="text-6 fw-600 lh-base mb-3 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                  I specialize in building
+                  <span class="text-primary">robust</span> and
+                  <span class="text-primary">production-ready</span> backend systems
+                  using Django and Django REST Framework.
+                </h3>
+                <p class="text-4 lh-lg mb-3 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                  Building secure and scalable backend systems with Django, designing clean REST APIs with Django REST Framework, integrating third-party services, and ensuring data integrity with comprehensive database design and optimization.
+                </p>
+                <div class="border-start border-primary border-3 ps-3 my-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <p class="text-4 text-body-secondary fst-italic mb-0">
+                    "Creating secure, efficient, and maintainable backend solutions with Django best practices."
+                  </p>
+                </div>
+
+                <div class="brands-grid separator-border mt-4 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                  <div class="row gx-4 gx-sm-5">
+                    <div class="col-6">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="text-10 text-primary mb-0 me-2 me-sm-3">
+                          <span class="counter" data-from="0" data-to="25">25</span>+
+                        </h4>
+                        <p class="text-body-secondary text-4 lh-sm text-start mb-0">
+                          Django<br>Projects
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="text-10 text-primary mb-0 me-2 me-sm-3">
+                          <span class="counter" data-from="0" data-to="99">99</span>%
+                        </h4>
+                        <p class="text-body-secondary text-4 lh-sm text-start mb-0">
+                          API<br>Uptime
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="text-10 text-primary mb-0 me-2 me-sm-3">
+                          <span class="counter" data-from="0" data-to="3">3</span>+
+                        </h4>
+                        <p class="text-body-secondary text-4 lh-sm text-start mb-0">
+                          Years of<br>Experience
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <h4 class="text-10 text-primary mb-0 me-2 me-sm-3">
+                          <span class="counter" data-from="0" data-to="50">50</span>K+
+                        </h4>
+                        <p class="text-body-secondary text-4 lh-sm text-start mb-0">
+                          API<br>Requests/Day
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Service Details end -->
+
+        <!-- Expertise
+    ============================================= -->
+        <section class="section">
+          <div class="container">
+            <!-- Heading -->
+            <div class="mx-auto text-center mb-4">
+              <p class="text-primary text-4 fw-500 mb-2 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                Technologies
+              </p>
+              <h2 class="heading-font-family text-uppercase text-7 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                Django Tech Stack
+              </h2>
+              <hr class="vr heading-separator-line wow slideInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+            </div>
+            <!-- Heading End -->
+
+            <div class="row g-5">
+              <div class="col-lg-5 col-xl-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <img class="img-fluid d-flex rounded-pill" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766514347/wmremove-transformed_1_fffffff_mzibtl.png" alt="">
+              </div>
+              <div class="col-lg-7 col-xl-8 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h3 class="text-7 fw-600">Core Django Development</h3>
+                <p class="text-6 text-body-secondary lh-base">
+                  Building powerful and scalable Django applications with modern tools:
+                </p>
+                <ul class="text-5 mb-0">
+                  <li>
+                    <strong class="fw-600">Django Framework</strong> – Creating robust web applications with Django's MVT architecture and best practices
+                  </li>
+                  <li>
+                    <strong class="fw-600">Django REST Framework (DRF)</strong> – Building clean, well-documented REST APIs with serializers and viewsets
+                  </li>
+                  <li>
+                    <strong class="fw-600">Authentication & Authorization</strong> – Implementing JWT, OAuth, and permission systems
+                  </li>
+                  <li>
+                    <strong class="fw-600">Database Models</strong> – Designing efficient ORM models with relationships and migrations
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="opacity-1 my-5">
+            <div class="row g-5">
+              <div class="col-lg-5 col-xl-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <img class="img-fluid d-flex rounded-pill" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766515683/Gemini_Generated_Image_enwn0wenwn0wenwn_qxqeph.png" alt="">
+              </div>
+              <div class="col-lg-7 col-xl-8 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h3 class="text-7 fw-600">Advanced Backend Features</h3>
+                <p class="text-6 text-body-secondary lh-base">
+                  Implementing sophisticated backend functionality:
+                </p>
+                <ul class="text-5 mb-0">
+                  <li>
+                    <strong class="fw-600">Caching & Performance</strong> – Redis caching, database query optimization, and pagination
+                  </li>
+                  <li>
+                    <strong class="fw-600">Asynchronous Tasks</strong> – Celery for background jobs, scheduled tasks, and email notifications
+                  </li>
+                  <li>
+                    <strong class="fw-600">API Documentation</strong> – Swagger/OpenAPI documentation with drf-spectacular
+                  </li>
+                  <li>
+                    <strong class="fw-600">Testing & Quality</strong> – Unit tests, integration tests, and code coverage with pytest
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="opacity-1 my-5">
+            <div class="row g-5">
+              <div class="col-lg-5 col-xl-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <img class="img-fluid d-flex rounded-pill" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766514347/wmremove-transformed_1_fffffff_mzibtl.png" alt="">
+              </div>
+              <div class="col-lg-7 col-xl-8 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                <h3 class="text-7 fw-600">Why Choose Django Backend?</h3>
+                <p class="text-6 text-body-secondary lh-base">
+                  Django provides significant advantages for backend development:
+                </p>
+                <ul class="text-5 mb-0">
+                  <li>
+                    <strong class="fw-600">Batteries Included</strong> – Built-in admin panel, ORM, migrations, and security features
+                  </li>
+                  <li>
+                    <strong class="fw-600">Security First</strong> – CSRF protection, SQL injection prevention, and secure authentication
+                  </li>
+                  <li>
+                    <strong class="fw-600">Scalability</strong> – Handles high traffic with proper caching and database optimization
+                  </li>
+                  <li>
+                    <strong class="fw-600">Rapid Development</strong> – Django's conventions speed up development and reduce boilerplate
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Expertise end -->
+
+        <!-- Work Process
+    ============================================= -->
+        <section class="section">
+          <div class="container">
+            <!-- Heading -->
+            <div class="mx-auto text-center mb-4">
+              <p class="text-primary text-4 fw-500 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                Development Flow
+              </p>
+              <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                Django Development Process
+              </h2>
+              <hr class="vr heading-separator-line wow slideInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+            </div>
+            <!-- Heading End -->
+
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-9">
+                <div class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="text-13 text-body-secondary opacity-2 fw-500 lh-1">
+                        01
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h3 class="text-7 fw-600">Database Design & Architecture</h3>
+                      <p class="text-5 text-body-secondary mb-0">
+                        Plan the database schema with proper relationships and normalization, design Django models that reflect data structures, establish foreign keys and relationships, implement indexing strategy for performance, and create comprehensive database documentation.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="opacity-1 my-4">
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="text-13 text-body-secondary opacity-2 fw-500 lh-1">
+                        02
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h3 class="text-7 fw-600">API Design & Serialization</h3>
+                      <p class="text-5 text-body-secondary mb-0">
+                        Design REST API endpoints following best practices, create serializers for data validation and transformation, implement proper HTTP methods and status codes, design authentication and permission layers, and ensure API versioning for backward compatibility.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="opacity-1 my-4">
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.7s" style="visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="text-13 text-body-secondary opacity-2 fw-500 lh-1">
+                        03
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h3 class="text-7 fw-600">Backend Logic & Services</h3>
+                      <p class="text-5 text-body-secondary mb-0">
+                        Implement business logic in views or viewsets, create reusable services for complex operations, handle errors gracefully with proper logging, implement pagination and filtering, add caching strategies for performance optimization, and setup background tasks with Celery.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="opacity-1 my-4">
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="text-13 text-body-secondary opacity-2 fw-500 lh-1">
+                        04
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h3 class="text-7 fw-600">Testing, Security & Deployment</h3>
+                      <p class="text-5 text-body-secondary mb-0">
+                        Write comprehensive unit and integration tests, implement security best practices, perform API documentation with Swagger, setup CI/CD pipelines, optimize database queries, and prepare for production deployment with proper configuration and monitoring.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Work Process end -->
+
+        <!-- Separator -->
+        <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+          <hr class="vr heading-separator-line mb-0">
+        </div>
+        <!-- Separator End -->
+
+        <!-- Let's Talk
+    ============================================= -->
+        <section class="section">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-10 col-xl-9">
+                <span class="position-relative d-inline-block wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                  <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2"><i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i></span>
+                  <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759511647/mhrrony-contact_hf1dyc.jpg" alt="">
+                </span>
+                <h3 class="text-9 lh-base mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                  I enjoy discussing
+                  <span class="text-primary">Django projects</span> and
+                  challenges.
+                  <span class="text-body-tertiary">Please share your ideas and requirements so</span>
+                  we can build powerful backend systems together.
+                </h3>
+                <div class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                  <a class="btn btn-primary" href="../pages/contact.html">Let's Talk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Let's Talk end -->
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+      <footer id="footer" class="section mt-4">
+        <div class="container">
+          <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+            <div class="col-lg-9">
+              <hr class="opacity-1">
+              <div class="social-links text-5 fw-500 d-flex justify-content-center mb-3">
+                <a href="https://wa.me/261341916421" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/RonhyRaktos/" target="_blank">Facebook</a>
+                <a href="https://mg.linkedin.com/in/ronhy-fetraniaina-rakotondrafara-85107627a" target="_blank">LinkedIn</a>
+                <a href="https://github.com/RonhyRaktosMG" target="_blank">GitHub</a>
+                <a href="https://www.upwork.com/freelancers/~0102da7d96803134ca" target="_blank">Upwork</a>
+              </div>
+              <hr class="opacity-1 mb-5">
+            </div>
+          </div>
+          <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+            Copyright © 2025
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Ronhy Raktos</a>. All Rights Reserved.
+          </p>
+          <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+            Designed by
+            <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://mhrrony.com">Ronhy Raktos</a>
+          </p>
+          <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#terms-service" href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" href="#top"></a>
+
+    <!-- Privacy - Modal
+================================== -->
+    <div id="privacy" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Privacy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              At Ronhy Raktos' Web Development Services, your privacy is of utmost importance. This Privacy Policy outlines how I collect, use, and protect your personal information when you visit my website or engage my development services.
+            </p>
+            <h5 class="text-5 mt-4">Information Collection</h5>
+            <ul class="lh-lg">
+              <li>Contact information including name, email address, and phone number when you submit project inquiries.</li>
+              <li>Project requirements and technical specifications shared during consultation.</li>
+              <li>Website analytics data to improve user experience.</li>
+              <li>Communication records including emails and meeting notes related to your projects.</li>
+            </ul>
+            <h5 class="text-5 mt-4">How I Use Your Information</h5>
+            <ul class="lh-lg">
+              <li>To provide development services tailored to your project needs.</li>
+              <li>To communicate project updates and deliverables.</li>
+              <li>To maintain project repositories and development environments securely.</li>
+              <li>To improve my services based on client feedback.</li>
+            </ul>
+            <h5 class="text-5 mt-4">Data Security & Protection</h5>
+            <p>
+              All client data is protected using industry-standard security measures including encrypted communications, secure development environments, and confidential project handling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Privacy - Modal End -->
+
+    <!-- Terms of Service - Modal
+================================== -->
+    <div id="terms-service" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-6">Terms of Service</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Welcome to Ronhy Raktos' Web Development Services. By engaging my services or using this website, you agree to comply with and be bound by the following terms and conditions.
+            </p>
+            <h3 class="mb-3 mt-4">Service Terms</h3>
+            <p>
+              I provide professional web development services specializing in modern web technologies. All services include code development, testing, deployment assistance, and technical support.
+            </p>
+            <h5 class="text-5 mt-4">Project Scope & Development Process</h5>
+            <p>
+              Each project begins with detailed consultation to define requirements and timeline. I follow best practices with regular updates and client feedback integration.
+            </p>
+            <h5 class="text-5 mt-4">Code Ownership & Intellectual Property</h5>
+            <p>
+              Upon full payment completion, clients receive complete ownership of custom-developed code and project assets. I retain the right to showcase completed projects in my portfolio.
+            </p>
+            <h5 class="text-5 mt-4">Payment Terms & Project Delivery</h5>
+            <p>
+              Projects typically require 50% upfront payment with the remainder due upon completion. All deliverables include source code, documentation, and deployment guidelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Terms & Policy Modal - End -->
+
+    <!-- Styles Switcher -->
+    <div id="styles-switcher" class="left bg-light-subtle">
+      <h2 class="text-5">Color Switcher</h2>
+      <hr>
+      <ul class="mb-0">
+        <li class="indigo" data-bs-toggle="tooltip" data-path="" aria-label="Indigo" data-bs-original-title="Indigo"></li>
+        <li class="blue" data-bs-toggle="tooltip" data-path="../css/color-blue.css" aria-label="Blue" data-bs-original-title="Blue"></li>
+        <li class="purple" data-bs-toggle="tooltip" data-path="../css/color-purple.css" aria-label="Purple" data-bs-original-title="Purple"></li>
+        <li class="cyan active" data-bs-toggle="tooltip" data-path="../css/color-cyan.css" aria-label="Cyan" data-bs-original-title="Cyan"></li>
+        <li class="red" data-bs-toggle="tooltip" data-path="../css/color-red.css" aria-label="Red" data-bs-original-title="Red"></li>
+        <li class="pink" data-bs-toggle="tooltip" data-path="../css/color-pink.css" aria-label="Pink" data-bs-original-title="Pink"></li>
+        <li class="teal" data-bs-toggle="tooltip" data-path="../css/color-teal.css" aria-label="Teal" data-bs-original-title="Teal"></li>
+        <li class="green" data-bs-toggle="tooltip" data-path="../css/color-green.css" aria-label="Green" data-bs-original-title="Green"></li>
+        <li class="yellow" data-bs-toggle="tooltip" data-path="../css/color-yellow.css" aria-label="Yellow (Default)" data-bs-original-title="Yellow (Default)"></li>
+        <li class="orange" data-bs-toggle="tooltip" data-path="../css/color-orange.css" aria-label="Orange" data-bs-original-title="Orange"></li>
+      </ul>
+      <button class="btn switcher-toggle">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+    <!-- Styles Switcher End -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Parallax Mouse Move -->
+    <script src="../js/parallax.min.js"></script>
+    <!-- Easing -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <!-- Appear -->
+    <script src="../js/jquery.appear.min.js"></script>
+    <!-- Images Loaded -->
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <!-- Counter -->
+    <script src="../js/jquery.countTo.min.js"></script>
+    <!-- Typed -->
+    <script src="../js/typed.min.js"></script>
+    <!-- WOW animation -->
+    <script src="../js/wow.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- isotope Portfolio Filter -->
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="../js/switcher-enhanced.js"></script>
+    <!-- Custom Script -->
+    <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.getElementById("theme-toggle");
+        const htmlElement = document.documentElement;
+        const iconDark = document.querySelector(".theme-icon-dark");
+        const iconLight = document.querySelector(".theme-icon-light");
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        htmlElement.setAttribute("data-bs-theme", savedTheme);
+        updateThemeIcon(savedTheme);
+        themeToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = htmlElement.getAttribute("data-bs-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+          htmlElement.setAttribute("data-bs-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+          updateThemeIcon(newTheme);
+        });
+        function updateThemeIcon(theme) {
+          if (theme === "dark") {
+            iconDark.style.display = "inline-block";
+            iconLight.style.display = "none";
+          } else {
+            iconDark.style.display = "none";
+            iconLight.style.display = "inline-block";
+          }
+        }
+      });
+    </script>
+
+</body></html>

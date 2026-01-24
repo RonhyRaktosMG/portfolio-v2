@@ -4,37 +4,37 @@
 // Page index.html
 //============================================
 
-✅ HERO (Accueil)
-Titre
+✅ HERO (Home)
+Title
 
 Fullstack Web & Mobile Developer • AI & Data Enthusiast
 
-Sous-titre
+Subtitle
 
 With a strong passion for clean UI and solid backend architecture, I build fast, scalable, and user-focused applications using modern technologies — and I also explore AI, data, and algorithms to create smarter solutions.
 
-Localisation
+Location
 
 📍 Antananarivo, Madagascar
 
-Sous-localisation
+Secondary location
 
 Available for remote work worldwide • Open to freelance & collaborations.
 
-Pseudo / Nom
+Display name
 
 Ronhy Raktos
 
-✅ ABOUT (À propos)
-Titre About
+✅ ABOUT
+About Title
 
 Hi, I’m Ronhy Raktos — a Fullstack Developer crafting modern web & mobile experiences.
 
-Sous-titre About
+About Subtitle
 
 “I turn ideas into clean, functional, and scalable products — with a focus on performance and great user experience.”
 
-Contenu About
+About Content
 
 I’m a fullstack developer specialized in web and mobile development, with experience building complete applications from UI to backend systems.
 My main stack includes Django, Flutter, and Next.js, and I focus on clean architecture, performance, and user experience.
@@ -42,8 +42,7 @@ Beyond development, I’m also passionate about AI, data, and algorithms. I enjo
 I love learning continuously and turning complex ideas into simple, usable products.
 My goal is always the same: deliver clean code, modern design, and a product that users love.
 
-
-Stats About
+About Stats
 
 10+
 Projects Completed
@@ -108,7 +107,7 @@ Cleaning, analyzing, and visualizing data to extract insights using tools like P
 Solving complex problems with optimized algorithms, clean logic, and structured code — useful for performance-critical features and system design.
 
 ✅ PROJECTS
-(ne modifie pas encore)
+(do not modify yet)
 
 ✅ FAQ (Frequently Asked Questions)
 1) What services do you offer?
@@ -146,10 +145,10 @@ Yes. I can integrate AI-powered features into apps by connecting backend service
 ✅ Contact CTA
 Contact CTA Text
 
-I enjoy discussing new projects challenges.
+I enjoy discussing new project challenges.
 Tell me about your goals, your needs, and your timeline — and let’s build something great together.
 
-✅ CONTACT (Infos)
+✅ CONTACT (Info)
 
 WhatsApp: +261341916421
 
@@ -158,6 +157,8 @@ Email: ronhyrakotondrafara08@gmail.com
 LinkedIn: ronhy-fetraniaina-rakotondrafara
 
 GitHub: RonhyRaktosMG
+
+Upwork: https://www.upwork.com/freelancers/~0102da7d96803134ca
 
 
 //============================================
@@ -285,3 +286,12 @@ Data Structures & Algorithms — 75%
 Problem Solving (Competitive style) — 80%
 
 Complexity & Optimization — 70%
+
+
+
+✅ ACHIEVEMENT
+Web Development with Django - Udemy - 2025
+Certificate of Completion in IoT Systems Communication - Orange Digital Center - 2024
+Python 3 Certification in Problem Solving - CodinGame - 2024
+Python Developer - SoloLearn - 2024
+Certificate in Web Development - Fynatec SARLU - 2023
