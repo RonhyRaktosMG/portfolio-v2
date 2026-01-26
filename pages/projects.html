@@ -74,12 +74,12 @@
       <!-- Header
   ============================ -->
       <header id="header" class="sticky-top-slide">
-        <!-- Navbar -->
-        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-5 fw-500">
+                <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500 sticky-on">
           <div class="container">
             <!-- Logo -->
             <a class="logo" href="../index.html">
-              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="Ronhy Raktos - Full Stack Developer Portfolio Logo">
+              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="">
             </a>
             <!-- Logo End -->
             <div id="header-nav" class="collapse navbar-collapse justify-content-center">
@@ -88,46 +88,47 @@
                   <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="../pages/about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#">Services<i class="arrow"></i></a>
-                  <ul class="dropdown-menu" style="">
+                  <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="services.html">All Services</a>
+                      <a class="dropdown-item active" href="../pages/services.html">All Services</a>
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
-                      <a class="dropdown-item" href="../services/react-development-details.html">Django Backend Development</a>
+                      <a class="dropdown-item" href="../services/django-backend-development-details.html">Django Backend Development</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/fullstack-development-details.html">Flutter Mobile App Development</a>
+                      <a class="dropdown-item" href="../services/flutter-mobile-app-development-details.html">Flutter Mobile App Development</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/nodejs-backend-details.html">Flutter Desktop App Development</a>
+                      <a class="dropdown-item" href="../services/flutter-desktop-app-development-details.html">Flutter Desktop App Development</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/devops-deployment-details.html">Database Design (MySQL / PostgreSQL)</a>
+                      <a class="dropdown-item" href="../services/database-design-details.html">Database Design</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/ecommerce-solutions-details.html">Deployment &amp; Hosting</a>
+                      <a class="dropdown-item" href="../services/deployment-hosting-details.html">Deployment &amp; Hosting</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/web-consulting-details.html">Algorithms &amp; Problem Solving</a>
+                      <a class="dropdown-item" href="../services/algorithms-problem-solving-details.html">Algorithms &amp; Problem Solving</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#">Projects<i class="arrow"></i></a>
-                  <ul class="dropdown-menu" style="display: none; height: 364px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                  <a class="nav-link dropdown-toggle active" href="#">Projects<i class="arrow"></i></a>
+                  <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="projects.html">All Projects</a>
+                      <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
                     </li>
+                    <li><hr class="dropdown-divider"></li>
                     <li>
                       <a class="dropdown-item" href="../projects/devstation-details.html">DevStation IT - Corporate</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../projects/codecampus-details.html">Code Campus - LMS</a>
+                      <a class="dropdown-item" href="../projects/codecampus-details.html">Code Campus - Course Platform</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="../projects/tayaaki-details.html">Tayaaki - E-commerce</a>
@@ -147,51 +148,34 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="../pages/contact.html">Contact</a>
                 </li>
               </ul>
             </div>
 
-            <!-- Social Icon -->
-            <ul class="social-icons social-icons-light social-icons-lg ms-auto">
-              <li class="social-icons-github">
-                <a href="https://github.com/MHR-RONY" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="GitHub" data-bs-original-title="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="social-icons-linkedin">
-                <a href="https://www.linkedin.com/in/mhrrony/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="LinkedIn" data-bs-original-title="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="social-icons-facebook">
-                <a href="https://www.facebook.com/Mhr.Rony0358" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Facebook" data-bs-original-title="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="social-icons-fiverr position-relative">
-                <a href="https://www.fiverr.com/mhr__rony" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Fiverr">
-                  <i class="fas fa-handshake"></i>
-                  <span class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle blink-dot">
-                    <span class="visually-hidden">Active on Fiverr</span>
-                  </span>
-                </a>
-              </li>
-              <!-- Theme Toggle -->
-              <li class="social-icons-theme-toggle">
-                <a href="#" id="theme-toggle" class="theme-toggle-btn">
-                  <i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i>
-                  <i class="fa-solid fa-sun theme-icon-light" style="display: none"></i>
-                </a>
-              </li>
-            </ul>
-            <!-- Social Icon End -->
+            <!-- Theme Toggle Button -->
+            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn me-2" style="
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              " title="Toggle Dark/Light Mode">
+              <i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i>
+              <i class="fa-solid fa-sun theme-icon-light" style="display: none"></i>
+            </a>
+            <!-- Theme Toggle End -->
 
             <!-- Hamburger Menu Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
               <span></span><span></span><span></span>
             </button>
             <!-- Hamburger Menu Button End -->
+
+            <!-- Hire me Button -->
+            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+            <!-- Hire me Button End -->
           </div>
         </nav>
         <!-- Navbar End -->
@@ -664,6 +648,8 @@
     <!-- Styles Switcher End -->
 
     <!-- JavaScript -->
+    <!-- Font Awesome -->
+    <script src="../js/all.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Parallax Mouse Move -->
