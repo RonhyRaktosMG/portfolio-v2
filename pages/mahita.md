@@ -159,3 +159,51 @@ niveau restant
 en charge / débranché
 
 Objectif : éviter la panne en déplacement.
+
+
+
+
+
+FONCTIONNALITé
+
+Description d’images
+
+Description : Mahita analyse l’environnement capturé par la caméra et décrit les objets, les scènes présentes.
+
+Outils / Technologie : Google MLKit (Image Labeling) ou BLIP (option dans paramètres)
+
+Reconnaissance faciale
+
+Description : Identifie les visages connus stockés dans la base de données de l’application pour permettre à l’utilisateur de reconnaître les personnes autour de lui.
+
+Outils / Technologie : MLKit Face Detection, Modele personnalisé face_recognition.tflite, Base de données locale SQLite
+
+Traduction de texte
+
+Description : Reconnaît le texte dans l’image ou depuis la voix d'une personne et le traduit vers ou depuis une langue étrangère, puis le lit à voix haute.
+
+Outils / Technologie : OCR (Google MLKit Text Recognition), Google MlKit Language Identification, Google MlKit Translation, Text-to-Speech (TTS)
+
+Détection d’obstacles
+
+Description : Mesure la distance des objets à proximité et alerte l’utilisateur pour éviter les collisions.
+
+Outils / Technologie : Capteur ultrason HC-SR04, ESP32, Buzzer
+
+Interaction par boutons physiques
+
+Description : Permet à l’utilisateur de naviguer dans l’application ou déclencher certaines actions sans écran.
+
+Outils / Technologie : Boutons, ESP32, websocket
+
+Retour vocal (Text-to-Speech)
+
+Description : Toutes les informations (description d’images, reconnaissance faciale, traduction, alertes) sont restituées vocalement pour l’utilisateur.
+
+Outils / Technologie : Text-to-Speech (Flutter TTS)
+
+Envoi de SMS
+
+Description : Envoyer le vocal de l'utilisateur comme SMS vers un numéro de confiance (modifiable dans le paramètre) 
+
+Outils / Technologie : sms_sender
