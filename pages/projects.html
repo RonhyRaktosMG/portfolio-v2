@@ -60,9 +60,9 @@
 
   <body id="top">
     <!-- Preloader -->
-    <div class="preloader" role="status" aria-live="polite" style="display: none;">
-      <div class="text-loader" style="display: none;">
-        <span>M</span><span>H</span><span>R</span><span>O</span><span>N</span><span>Y</span>
+    <div class="preloader" role="status" aria-live="polite" style="">
+      <div class="text-loader" style="">
+        <span>R</span><span>O</span><span>N</span><span>H</span><span>Y</span><span class="space">&nbsp;</span><span>R</span><span>A</span><span>K</span><span>T</span><span>O</span><span>S</span>
       </div>
       <span class="sr-only">Loading...</span>
     </div>
@@ -74,12 +74,12 @@
       <!-- Header
   ============================ -->
       <header id="header" class="sticky-top-slide">
-                <!-- Navbar -->
-        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500 sticky-on">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500">
           <div class="container">
             <!-- Logo -->
             <a class="logo" href="../index.html">
-              <img src="https://res.cloudinary.com/dreby3qi3/image/upload/v1753135837/logo_k79plb.png" alt="">
+              <img src="../imgs/logo.png" style="width: 72px;height: 72px;" alt="">
             </a>
             <!-- Logo End -->
             <div id="header-nav" class="collapse navbar-collapse justify-content-center">
@@ -92,9 +92,9 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#">Services<i class="arrow"></i></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" style="display: none;">
                     <li>
-                      <a class="dropdown-item active" href="../pages/services.html">All Services</a>
+                      <a class="dropdown-item" href="../pages/services.html">All Services</a>
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
@@ -110,72 +110,51 @@
                       <a class="dropdown-item" href="../services/database-design-details.html">Database Design</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/deployment-hosting-details.html">Deployment &amp; Hosting</a>
+                      <a class="dropdown-item" href="../services/deployment-hosting-details.html">Deployment & Hosting</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../services/algorithms-problem-solving-details.html">Algorithms &amp; Problem Solving</a>
+                      <a class="dropdown-item" href="../services/algorithms-problem-solving-details.html">Algorithms & Problem Solving</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle active" href="#">Projects<i class="arrow"></i></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" style="">
                     <li>
-                      <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
+                      <a class="dropdown-item active" href="../pages/projects.html">All Projects</a>
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
-                      <a class="dropdown-item" href="../projects/devstation-details.html">DevStation IT - Corporate</a>
+                      <a class="dropdown-item" href="../projects/mahita-details.html">Mahita - Blind Assistance App</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../projects/codecampus-details.html">Code Campus - Course Platform</a>
+                      <a class="dropdown-item" href="../projects/beloty-details.html">Beloty - Card Game</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="../projects/tayaaki-details.html">Tayaaki - E-commerce</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../projects/byte-details.html">Byte - Social Platform</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../projects/izabela-details.html">Izabela - AI Companion</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../projects/bloodconnect-details.html">BloodConnect</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="../projects/zerohunger-details.html">Zero Hunger</a>
+                      <a class="dropdown-item" href="../projects/fandaharampotoana-details.html">Fandaharam-potoana - Church App</a>
                     </li>
                   </ul>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="../pages/contact.html">Contact</a>
                 </li>
               </ul>
             </div>
-
-            <!-- Theme Toggle Button -->
-            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn me-2" style="
+            <!-- Hire me Button -->
+            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+            <!-- Hire me Button End -->
+            <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn ms-2" style="
                 width: 40px;
                 height: 40px;
                 padding: 0;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-              " title="Toggle Dark/Light Mode">
-              <i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i>
-              <i class="fa-solid fa-sun theme-icon-light" style="display: none"></i>
-            </a>
-            <!-- Theme Toggle End -->
-
-            <!-- Hamburger Menu Button -->
+              " title="Toggle Dark/Light Mode"><i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i><i class="fa-solid fa-sun theme-icon-light" style="display: none"></i></a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
-              <span></span><span></span><span></span>
+              <span></span> <span></span> <span></span>
             </button>
-            <!-- Hamburger Menu Button End -->
-
-            <!-- Hire me Button -->
-            <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
-            <!-- Hire me Button End -->
           </div>
         </nav>
         <!-- Navbar End -->
@@ -229,6 +208,7 @@
 
             <div class="portfolio wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
               <div class="row portfolio-filter g-4" style="position: relative; height: 1096px;">
+                <!-- Mahita  -->
                 <div class="col-sm-6 col-lg-4 lms" style="position: absolute; left: 0px; top: 0px;">
                   <div class="portfolio-box rounded-4">
                     <div class="portfolio-img rounded-4 project-scroll-image-2">
@@ -245,12 +225,14 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Beloty  -->
                 <div class="col-sm-6 col-lg-4 ecommerce" style="position: absolute; left: 380px; top: 0px;">
                   <div class="portfolio-box rounded-4">
                     <div class="portfolio-img rounded-4 project-scroll-image">
-                      <img class="img-fluid d-block project-image" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1766086328/www.tayaaki.com__1_ccqpwh.png" alt="Tayaaki Modern Clothing E-commerce - MERN Stack Online Store">
+                      <img class="img-fluid d-block project-image" src="../imgs/projects/beloty/Beloty-Preview.png" alt="Tayaaki Modern Clothing E-commerce - MERN Stack Online Store">
                       <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/tayaaki-details.html"></a>
+                        <a class="stretched-link" href="../projects/beloty-details.html"></a>
                         <div class="portfolio-overlay-details">
                           <h5 class="text-white text-6 fw-600">
                             Tayaaki - Modern Clothing E-commerce
@@ -261,6 +243,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Fandaharam-potoana  -->
                 <div class="col-sm-6 col-lg-4 social" style="position: absolute; left: 760px; top: 0px;">
                   <div class="portfolio-box rounded-4">
                     <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
@@ -277,82 +261,76 @@
                     </div>
                   </div>
                 </div>
+
+
                 <div class="col-sm-6 col-lg-4 social" style="position: absolute; left: 760px; top: 274px;">
                   <div class="portfolio-box rounded-4">
-                    <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
-                      <img class="img-fluid d-block project-image-3" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767885639/bloodconnect.mhrrony.com__1_tinpem.png" alt="Blood Connect - Social Charity Platform">
-                      <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/bloodconnect-details.html"></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white text-6 fw-600">
-                            Blood Connect
-                          </h5>
-                          <span class="text-dark text-5">Blood Donation Platform</span>
-                        </div>
-                      </div>
+                  <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
+                    <img class="img-fluid d-block project-image-3" src="../imgs/projects/coming_soon.png" alt="Coming Soon Project">
+                    <div class="portfolio-overlay">
+                    <a class="stretched-link" href="#"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white text-6 fw-600"></h5>
+                      <span class="text-dark text-5"></span>
                     </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 social" style="position: absolute; left: 760px; top: 548px;">
                   <div class="portfolio-box rounded-4">
-                    <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
-                      <img class="img-fluid d-block project-image-3" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1759606534/zerohunger.mhrrony.com__2_cth0ob.png" alt="Zero Hunger Charity Website - Full Stack E-commerce Platform for Donations">
-                      <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/zerohunger-details.html"></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white text-6 fw-600">
-                            Zero Hunger - Charity Website
-                          </h5>
-                          <span class="text-light text-5">Charity Platform</span>
-                        </div>
-                      </div>
+                  <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
+                    <img class="img-fluid d-block project-image-3" src="../imgs/projects/coming_soon.png" alt="Coming Soon Project">
+                    <div class="portfolio-overlay">
+                    <a class="stretched-link" href="#"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white text-6 fw-600"></h5>
+                      <span class="text-dark text-5"></span>
                     </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 react" style="position: absolute; left: 0px; top: 558px;">
                   <div class="portfolio-box rounded-4">
-                    <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
-                      <img class="img-fluid d-block project-image-3" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767886472/www.mhrrony.com__1_eumqyt.png" alt="">
-                      <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/project-single-details.html"></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white text-6 fw-600">
-                            Portfolio Website
-                          </h5>
-                          <span class="text-light text-5">Professional Portfolio</span>
-                        </div>
-                      </div>
+                  <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
+                    <img class="img-fluid d-block project-image-3" src="../imgs/projects/coming_soon.png" alt="Coming Soon Project">
+                    <div class="portfolio-overlay">
+                    <a class="stretched-link" href="#"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white text-6 fw-600"></h5>
+                      <span class="text-dark text-5"></span>
                     </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 aiagent" style="position: absolute; left: 380px; top: 657.141px;">
                   <div class="portfolio-box rounded-4">
-                    <div class="portfolio-img rounded-4">
-                      <img class="img-fluid d-block" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1767468993/Screenshot_2026-01-04_at_1.06.18_AM_xx2rvy.png" alt="YouTube Clone - AI Agent Systems Project">
-                      <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/izabela-details.html"></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white text-6 fw-600">AI Companion</h5>
-                          <span class="text-light text-5">AI-Powered Companion</span>
-                        </div>
-                      </div>
+                  <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
+                    <img class="img-fluid d-block project-image-3" src="../imgs/projects/coming_soon.png" alt="Coming Soon Project">
+                    <div class="portfolio-overlay">
+                    <a class="stretched-link" href="#"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white text-6 fw-600"></h5>
+                      <span class="text-dark text-5"></span>
                     </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 corporate" style="position: absolute; left: 760px; top: 822px;">
                   <div class="portfolio-box rounded-4">
-                    <div class="portfolio-img rounded-4" style="height: 250px !important">
-                      <img class="img-fluid d-block" src="https://res.cloudinary.com/dreby3qi3/image/upload/v1768062786/Screenshot_2026-01-10_223223_llxi5k.png" alt="DevStation IT - Corporate Website Project">
-                      <div class="portfolio-overlay">
-                        <a class="stretched-link" href="../projects/devstation-details.html"></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white text-6 fw-600">
-                            DevStation IT - Corporate Website
-                          </h5>
-                          <span class="text-light text-5">Professional IT Services Portal</span>
-                        </div>
-                      </div>
+                  <div class="portfolio-img rounded-4 project-scroll-image-3" style="height: 250px !important">
+                    <img class="img-fluid d-block project-image-3" src="../imgs/projects/coming_soon.png" alt="Coming Soon Project">
+                    <div class="portfolio-overlay">
+                    <a class="stretched-link" href="#"></a>
+                    <div class="portfolio-overlay-details">
+                      <h5 class="text-white text-6 fw-600"></h5>
+                      <span class="text-dark text-5"></span>
                     </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
