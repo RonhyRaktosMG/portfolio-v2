@@ -4,7 +4,7 @@ from urllib.parse import urljoin, urlparse
 from pathlib import Path
 
 # Configuration
-BASE_URL = "https://mhrrony.com/"
+BASE_URL = "https://ronhyraktosmg.github.io/portfolio"
 OUTPUT_DIR = "portfolio_download"
 TIMEOUT = 10
 
