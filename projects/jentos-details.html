@@ -1,0 +1,656 @@
+<html lang="en" data-bs-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="/favicon.ico" rel="icon">
+  <title>
+    JentOS | Web-based Operating System – Ronhy Raktos Portfolio
+  </title>
+  <meta name="description" content="JentOS is a web-based operating system providing internet access management and cloud storage for users, with SSH and file management features, built with Django and Linux integration.">
+  <meta name="author" content="Ronhy Raktos">
+  <meta name="keywords" content="JentOS, WebOS, Internet Access Management, File Storage, Django, Linux, SSH Terminal, Web-based OS, Ronhy Raktos Portfolio">
+  <link rel="canonical" href="./jentos-details.html">
+  <!-- Stylesheet
+============================== -->
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="../css/magnific-popup.min.css">
+  <!-- Hover Card Effect -->
+  <link rel="stylesheet" type="text/css" href="../css/hover-card-effect.css">
+  <!-- Theme Toggle -->
+   <link rel="stylesheet" type="text/css" href="../css/theme-toggle.css">
+  <!-- Orbitron Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+  <!-- Colors Css -->
+  <link id="color-switcher" type="text/css" rel="stylesheet" href="../css/color-cyan.css">
+  <!-- Load saved color immediately -->
+  <script>
+    (function () {
+    var savedColorName = localStorage.getItem("portfolioColorName");
+    if (savedColorName) {
+      var colorSwitcher = document.getElementById("color-switcher");
+      if (colorSwitcher) {
+      var currentHref = colorSwitcher.getAttribute("href");
+      var correctPath = currentHref.startsWith("../")
+        ? "../css/color-" + savedColorName + ".css"
+        : "css/color-" + savedColorName + ".css";
+      colorSwitcher.setAttribute("href", correctPath);
+      }
+    }
+    })();
+  </script>
+
+  </head>
+
+  <body id="top">
+  <!-- Preloader -->
+    <div class="preloader" role="status" aria-live="polite" style="">
+      <div class="text-loader" style="">
+        <span>R</span><span>O</span><span>N</span><span>H</span><span>Y</span><span class="space">&nbsp;</span><span>R</span><span>A</span><span>K</span><span>T</span><span>O</span><span>S</span>
+      </div>
+      <span class="sr-only">Loading...</span>
+    </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper
+=============================== -->
+  <div id="main-wrapper" class="dotted-background">
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top-slide">
+    <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg bg-transparent border-bottom-0 text-uppercase text-3 fw-500">
+        <div class="container">
+          <!-- Logo -->
+          <a class="logo" href="../index.html">
+            <img src="../imgs/logo.png" style="width: 72px;height: 72px;" alt="">
+          </a>
+          <!-- Logo End -->
+          <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">Services<i class="arrow"></i></a>
+                <ul class="dropdown-menu" style="display: none;">
+                  <li>
+                    <a class="dropdown-item" href="../pages/services.html">All Services</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="../services/django-backend-development-details.html">Django Backend Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services/flutter-mobile-app-development-details.html">Flutter Mobile App Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services/flutter-desktop-app-development-details.html">Flutter Desktop App Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services/database-design-details.html">Database Design</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services/deployment-hosting-details.html">Deployment & Hosting</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services/algorithms-problem-solving-details.html">Algorithms & Problem Solving</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#">Projects<i class="arrow"></i></a>
+                <ul class="dropdown-menu" style="">
+                  <li>
+                    <a class="dropdown-item" href="../pages/projects.html">All Projects</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="../projects/mahita-details.html">Mahita - Blind Assistance App</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../projects/beloty-details.html">Beloty - Card Game</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="../projects/jentos-details.html">JentOS - Web-based OS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Hire me Button -->
+          <a class="btn btn-outline-light text-3 text-capitalize py-2 px-3" href="../pages/contact.html">Hire Me!</a>
+          <!-- Hire me Button End -->
+          <a href="#" id="theme-toggle" class="btn btn-outline-light rounded-circle theme-toggle-btn ms-2" style="
+              width: 40px;
+              height: 40px;
+              padding: 0;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+            " title="Toggle Dark/Light Mode"><i class="fa-solid fa-moon theme-icon-dark" style="display: inline-block;"></i><i class="fa-solid fa-sun theme-icon-light" style="display: none"></i></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav">
+            <span></span> <span></span> <span></span>
+          </button>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header
+  ============================================= -->
+    <section class="page-header">
+    <div class="container text-center py-5 mt-5">
+      <!-- Page Title -->
+      <p class="text-primary text-4 fw-500 mt-5 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+      Web-based Operating System for Internet Access & File Storage
+      </p>
+      <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+      JentOS
+      </h2>
+      <hr class="vr heading-separator-line mb-3 wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+      <p class="text-6 text-body-secondary wow fadeInUp" data-wow-delay="0.45s" style="visibility: visible; animation-delay: 0.45s;">
+      JentOS is a web-based operating system that allows centralized management of internet access, secure storage of user files directly on the server, and provides a web interface with SSH terminal and file manager. Each user’s data is stored in their Linux home directory on the server, making it both an access control system and cloud-like storage solution.
+      </p>
+      <!-- Image principale du projet -->
+      <div class="mt-4 wow fadeInUp d-flex justify-content-center" data-wow-delay="0.5s">
+      <img
+        class="col-lg-6 img-fluid rounded-4 shadow-lg"
+        src="../imgs/projects/fandaharampototana/Fp-Hero.png"
+        alt="Main preview of JentOS project"
+        loading="lazy"
+      />
+      </div>
+    </div>
+    </section>
+    <!-- Page Header end -->
+
+    <!-- Content
+  ============================================= -->
+    <div id="content" role="main">
+    <!-- Projects
+  ============================================= -->
+    <section class="section pt-0">
+      <div class="container">
+      <p class="text-6 wow fadeInUp" data-wow-delay="0.2s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.2s;">
+        JentOS is a web-based OS designed to centralize internet access and file storage for a network of users.
+      </p>
+      <p class="text-6 wow fadeInUp" data-wow-delay="0.25s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.25s;">
+        Administrators can manage internet access by user, group, or site, using an admin interface powered by Django and iptables.
+      </p>
+      <p class="text-6 wow fadeInUp" data-wow-delay="0.25s" style="text-align: justify; line-height: 1.6; hyphens: auto; visibility: visible; animation-delay: 0.25s;">
+        The project uses a custom DNS entry (jentos.mit) for user-friendly access.
+      </p>
+
+      <div class="brands-grid separator-border my-4 my-sm-5">
+        <div class="row gx-5">
+        <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+          <p class="text-body-secondary fw-500 mb-0">Client:</p>
+          <p class="text-5 fw-600 mb-0">Academic Project</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+          <p class="text-body-secondary fw-500 mb-0">Industry:</p>
+          <p class="text-5 fw-600 mb-0">MISA Antananarivo</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+          <p class="text-body-secondary fw-500 mb-0">Duration:</p>
+          <p class="text-5 fw-600 mb-0">2 Months</p>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-2 py-sm-3 py-lg-0 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+          <p class="text-body-secondary fw-500 mb-0">URL:</p>
+          <p class="text-5 fw-600 mb-0">
+          <a class="link-primary link-offset-2 link-underline-opacity-100 link-underline-opacity-25-hover" target="_blank" href="#">Visit Demo</a>
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="hstack flex-wrap gap-3 justify-content-center my-5 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+        <span class="d-inline-block border rounded-4 py-2 px-3">Django</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Django Channels</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Django Rest Framework</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Linux Integration</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Bash Scripting</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Web-based OS</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">SSH</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">XTerm</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">File Manager</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">iptables</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">DNS Management</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Bind9</span>
+        <span class="d-inline-block border rounded-4 py-2 px-3">Internet Access Control</span>
+      </div>
+      </div>
+
+      <!-- Separator -->
+      <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+      <hr class="vr heading-separator-line mb-0">
+      </div>
+      <!-- Separator End -->
+
+      <!-- Section 1: Problem-Solving -->
+      <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+        <h2 class="heading-font-family text-uppercase text-9 fw-600 mb-3">Problem-Solving Overview</h2>
+        <p class="text-6 text-body-secondary">From identifying issues to delivering solutions with impact.</p>
+        </div>
+
+        <!-- Custom Card -->
+        <div class="section_casestudy">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="casestudy_category">
+          <div class="casestudy_cards_box">
+          <div style="display: inline-block; height: 48px;"></div>
+          <div class="casestudy_card color-problem">
+          <div class="hover_color_bubble"></div>
+          <div class="so_top_icon">
+          <img src="../imgs/icons/problem.png" alt="Problem" style="width:48px;height:48px;">
+          </div>
+          <div class="solu_title">
+          <h3>Problem</h3>
+          </div>
+          <div class="solu_description">
+          <ul>
+            <li>No centralized control of internet access</li>
+            <li>Disparate file storage across devices</li>
+            <li>Limited remote access tools for users</li>
+          </ul>
+          </div>
+          </div>
+          <div class="casestudy_card color-cause">
+          <div class="hover_color_bubble"></div>
+          <div class="so_top_icon">
+          <img src="../imgs/icons/cause.png" alt="Causes" style="width:48px;height:48px;">
+          </div>
+          <div class="solu_title">
+          <h3>Causes</h3>
+          </div>
+          <div class="solu_description">
+          <ul>
+            <li>Manual per-machine configuration</li>
+            <li>Lack of an integrated web interface</li>
+            <li>No standardized DNS/identity on the network</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+        <!--  -->
+          <div class="casestudy_cards_box sol_card_top_3">
+          <div class="casestudy_card color-consequence">
+          <div class="hover_color_bubble"></div>
+          <div class="so_top_icon">
+          <img src="../imgs/icons/consequence.png" alt="Consequences" style="width:48px;height:48px;">
+          </div>
+          <div class="solu_title">
+          <h3>Consequences</h3>
+          </div>
+          <div class="solu_description">
+          <ul>
+            <li>Inconsistent access policies</li>
+            <li>Security and compliance risks</li>
+            <li>Poor user experience and productivity</li>
+          </ul>
+          </div>
+          </div>
+          <div class="casestudy_card color-solution">
+          <div class="hover_color_bubble"></div>
+          <div class="so_top_icon">
+          <img src="../imgs/icons/solution.png" alt="Solution" style="width:48px;height:48px;">
+          </div>
+          <div class="solu_title">
+          <h3>Solution</h3>
+          </div>
+          <div class="solu_description">
+          <ul>
+            <li>Django-based admin for policies</li>
+            <li>iptables-driven internet control</li>
+            <li>Web SSH terminal and file manager</li>
+            <li>Custom DNS for easy access</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- Custom Card End -->
+        </div>
+      </div>
+      </div>
+      <!-- Section 1 End -->
+
+      <!-- Separator -->
+      <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+      <hr class="vr heading-separator-line mb-0">
+      </div>
+      <!-- Separator End -->
+
+      <!-- Section 2: Features -->
+      <div class="container my-5 py-5">
+      <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+      <h2 class="heading-font-family text-uppercase text-9 fw-600 mb-3">
+      Key Features
+      </h2>
+      <p class="text-6 text-body-secondary">
+      Discover the core functionalities and how they improve user experience.
+      </p>
+      </div>
+
+      <!-- Feature 1 - Image Left -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+      <img src="../imgs/projects/jentos/Jentos-Logo.png" alt="Internet Access Management" class="img-fluid rounded-4 shadow-lg" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/0dcaf0/ffffff?text=Internet+Access+Management'" style="max-height: 400px;">
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+      <div class="feature-badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 d-inline-block mb-3">
+        <i class="fas fa-calendar-check me-2"></i>Feature 01
+      </div>
+      <h3 class="text-7 fw-600 mb-3">Internet Access Management</h3>
+      <p class="text-6 mb-3" style="line-height: 1.8;">
+        Centrally define and enforce per-user, per-group, and per-site internet policies.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">Django</span>
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">iptables</span>
+      </div>
+      </div>
+      </div>
+
+      <!-- Feature 2 - Image Right -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom wow fadeInUp" data-wow-delay="0.4s">
+      <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+      <img src="../imgs/projects/jentos/Jentos-Logo.png" alt="Server-side File Storage" class="img-fluid rounded-4 shadow-lg" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/198754/ffffff?text=Server-side+File+Storage'" style="max-height: 400px;">
+      </div>
+      <div class="col-lg-6 order-lg-1 pe-lg-5">
+      <div class="feature-badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 d-inline-block mb-3">
+        <i class="fas fa-book-bible me-2"></i>Feature 02
+      </div>
+      <h3 class="text-7 fw-600 mb-3">Server-side File Storage</h3>
+      <p class="text-6 mb-3" style="line-height: 1.8;">
+        Store user files directly on the server within their Linux home directories.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">Linux Integration</span>
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">File Manager</span>
+      </div>
+      </div>
+      </div>
+
+      <!-- Feature 3 - Image Left -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom wow fadeInUp" data-wow-delay="0.5s">
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+      <img src="../imgs/projects/jentos/Jentos-Logo.png" alt="SSH Terminal" class="img-fluid rounded-4 shadow-lg" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/6f42c1/ffffff?text=SSH+Terminal'" style="max-height: 400px;">
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+      <div class="feature-badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 d-inline-block mb-3">
+        <i class="fas fa-qrcode me-2"></i>Feature 03
+      </div>
+      <h3 class="text-7 fw-600 mb-3">SSH Terminal</h3>
+      <p class="text-6 mb-3" style="line-height: 1.8;">
+        Access a browser-based SSH terminal connected to user sessions.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">SSH Terminal</span>
+      </div>
+      </div>
+      </div>
+
+      <!-- Feature 4 - Image Right -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom wow fadeInUp" data-wow-delay="0.8s">
+      <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+      <img src="../imgs/projects/jentos/Jentos-Logo.png" alt="Custom DNS" class="img-fluid rounded-4 shadow-lg" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/6610f2/ffffff?text=Custom+DNS'" style="max-height: 400px;">
+      </div>
+      <div class="col-lg-6 order-lg-1 pe-lg-5">
+      <div class="feature-badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 d-inline-block mb-3">
+        <i class="fas fa-wifi-slash me-2"></i>Feature 04
+      </div>
+      <h3 class="text-7 fw-600 mb-3">Custom DNS</h3>
+      <p class="text-6 mb-3" style="line-height: 1.8;">
+        Reach the platform through a friendly domain (jentos.mit) on the local network.
+      </p>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">DNS Management</span>
+      </div>
+      </div>
+      </div>
+
+      <!-- Feature 5 - Image Left -->
+      <div class="row align-items-center mb-5 pb-4 border-bottom wow fadeInUp" data-wow-delay="0.7s">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+          <img src="../imgs/projects/jentos/Jentos-Logo.png" alt="Admin Interface" class="img-fluid rounded-4 shadow-lg" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400/20c997/ffffff?text=Admin+Interface'" style="max-height: 400px;">
+        </div>
+        <div class="col-lg-6 ps-lg-5">
+          <div class="feature-badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 d-inline-block mb-3">
+        <i class="fas fa-language me-2"></i>Feature 05
+          </div>
+          <h3 class="text-7 fw-600 mb-3">Admin Interface</h3>
+          <p class="text-6 mb-3" style="line-height: 1.8;">
+        Manage users, groups, policies, and storage via admin dashboard.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-light text-dark px-3 py-2 rounded-3">Django Admin</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+
+      <!-- Separator -->
+      <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+      <hr class="vr heading-separator-line mb-0">
+      </div>
+      <!-- Separator End -->
+
+      <!-- Section 3: My Role -->
+      <div class="container my-5 py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.2s">
+          <h2 class="heading-font-family text-uppercase text-9 fw-600 mb-3">
+          My Role in the Project
+          </h2>
+          <p class="text-6 text-body-secondary">
+          What i really did to make this project a success.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Column 1 -->
+          <div class="wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="bg-primary bg-opacity-10 border-top border-primary border-4 rounded-3 p-4 h-100">
+            <h4 class="text-6 fw-600 mb-4 text-primary">
+            <i class="fas fa-code me-2"></i>WebOS Designer &amp; Backend Integrator
+            </h4>
+            <ul class="text-6 mb-0" style="line-height: 2;">
+            <li>Designed the WebOS architecture and user workflow.</li>
+            <li>Integrated Linux user management with Django accounts.</li>
+            <li>Implemented iptables-based internet control system.</li>
+            <li>Developed web file manager synced with Linux home directories.</li>
+            <li>Built SSH terminal access within web interface.</li>
+            <li>Configured custom DNS for easy access.</li>
+            </ul>
+          </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      </div>
+
+   
+    </section>
+    <!-- Projects end -->
+
+    <!-- Separator -->
+    <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+      <hr class="vr heading-separator-line mb-0">
+    </div>
+    <!-- Separator End -->
+
+    <!-- Let's Talk
+    ============================================= -->
+    <section class="section">
+      <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-10 col-xl-9">
+        <span class="position-relative d-inline-block wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+          <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2"><i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i></span>
+          <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="../imgs/profil.png" alt="image loading...">
+        </span>
+        <h3 class="text-9 lh-base mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+          I enjoy discussing
+          <span class="text-primary">new projects</span> challenges.
+          <span class="text-body-tertiary">Tell me about your goals, your needs, and your timeline</span>
+          and let’s build something great together.
+        </h3>
+        <div class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+          <a class="btn btn-primary" href="../pages/contact.html">Let's Talk Me</a>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Let's Talk end -->
+    </div>
+    <!-- Content end -->
+
+    <!-- Footer
+    ============================================= -->
+    <footer id="footer" class="section mt-4">
+    <div class="container">
+      <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+      <div class="col-lg-9">
+        <hr class="opacity-1">
+        <div class="social-links text-5 fw-500 d-flex justify-content-center mb-3">
+        <!-- <a href="https://www.instagram.com/mhr__rony" target="_blank">Instagram</a> -->
+        <a href="https://wa.me/261341916421" target="_blank">WhatsApp</a>
+        <a href="https://www.facebook.com/RonhyRaktos/" target="_blank">Facebook</a>
+        <a href="https://mg.linkedin.com/in/ronhy-fetraniaina-rakotondrafara-85107627a" target="_blank">LinkedIn</a>
+        <a href="https://github.com/RonhyRaktosMG" target="_blank">GitHub</a>
+        <a href="https://www.upwork.com/freelancers/~0102da7d96803134ca" target="_blank">Upwork</a>
+        </div>
+        <hr class="opacity-1 mb-5">
+      </div>
+      </div>
+      <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+      Copyright © 2026
+      <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.mhrrony.com">Ronhy Raktos</a>. All Rights Reserved.
+      </p>
+      <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+      Designed by
+      <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://mhrrony.com">Ronhy Raktos</a>
+      </p>
+    </div>
+    </footer>
+    <!-- Footer end -->
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back to Top
+============================================= -->
+  <a id="back-to-top" href="#top" style="--progress: 16.298258123663032%; display: inline;"></a>
+
+  <!-- Styles Switcher -->
+  <div id="styles-switcher" class="left bg-light-subtle">
+    <h2 class="text-5">Color Switcher</h2>
+    <hr>
+    <ul class="mb-0">
+    <li class="indigo" data-bs-toggle="tooltip" data-path="" aria-label="Indigo" data-bs-original-title="Indigo"></li>
+    <li class="blue" data-bs-toggle="tooltip" data-path="../css/color-blue.css" aria-label="Blue" data-bs-original-title="Blue"></li>
+    <li class="purple" data-bs-toggle="tooltip" data-path="../css/color-purple.css" aria-label="Purple" data-bs-original-title="Purple"></li>
+    <li class="cyan active" data-bs-toggle="tooltip" data-path="../css/color-cyan.css" aria-label="Cyan" data-bs-original-title="Cyan"></li>
+    <li class="red" data-bs-toggle="tooltip" data-path="../css/color-red.css" aria-label="Red" data-bs-original-title="Red"></li>
+    <li class="pink" data-bs-toggle="tooltip" data-path="../css/color-pink.css" aria-label="Pink" data-bs-original-title="Pink"></li>
+    <li class="teal" data-bs-toggle="tooltip" data-path="../css/color-teal.css" aria-label="Teal" data-bs-original-title="Teal"></li>
+    <li class="green" data-bs-toggle="tooltip" data-path="../css/color-green.css" aria-label="Green" data-bs-original-title="Green"></li>
+    <li class="yellow" data-bs-toggle="tooltip" data-path="../css/color-yellow.css" aria-label="Yellow (Default)" data-bs-original-title="Yellow (Default)"></li>
+    <li class="orange" data-bs-toggle="tooltip" data-path="../css/color-orange.css" aria-label="Orange" data-bs-original-title="Orange"></li>
+    </ul>
+    <button class="btn switcher-toggle">
+    <i class="fa-solid fa-gear"></i>
+    </button>
+  </div>
+  <!-- Styles Switcher End -->
+
+  <!-- JavaScript -->
+  <!-- Font Awesome -->
+  <script src="../js/all.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!-- Parallax Mouse Move -->
+  <script src="../js/parallax.min.js"></script>
+  <!-- Easing -->
+  <script src="../js/jquery.easing.min.js"></script>
+  <!-- Appear -->
+  <script src="../js/jquery.appear.min.js"></script>
+  <!-- Images Loaded -->
+  <script src="../js/imagesloaded.pkgd.min.js"></script>
+  <!-- Counter -->
+  <script src="../js/jquery.countTo.min.js"></script>
+  <!-- Typed -->
+  <script src="../js/typed.min.js"></script>
+  <!-- WOW animation -->
+  <script src="../js/wow.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="../js/owl.carousel.min.js"></script>
+  <!-- isotope Portfolio Filter -->
+  <script src="../js/isotope.pkgd.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <!-- Style Switcher -->
+  <script src="../js/switcher-enhanced.js"></script>
+  <!-- Custom Script -->
+  <script src="../js/main.js"></script>
+  <!-- Font Awesome -->
+  <script src="js/all.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const t = document.getElementById("theme-toggle"),
+      e = document.documentElement,
+      o = document.querySelector(".theme-icon-dark"),
+      n = document.querySelector(".theme-icon-light"),
+      d = localStorage.getItem("theme") || "dark";
+    e.setAttribute("data-bs-theme", d),
+      l(d),
+      t.addEventListener("click", function (t) {
+      t.preventDefault();
+      const o = e.getAttribute("data-bs-theme"),
+        n = "dark" === o ? "light" : "dark";
+      e.setAttribute("data-bs-theme", n),
+        localStorage.setItem("theme", n),
+        l(n);
+      });
+    function l(t) {
+      "dark" === t
+      ? ((o.style.display = "inline-block"), (n.style.display = "none"))
+      : ((o.style.display = "none"), (n.style.display = "inline-block"));
+    }
+    });
+  </script>
+  
+
+</body></html>
