@@ -1,11 +1,3 @@
-/**
- * Theme Toggle Handler
- * Author: Mhr Rony (https://mhrrony.com)
- * Company: DevStation IT (https://devstationit.com)
- * © 2024-2026 Mhr Rony. All Rights Reserved.
- *
- * Manages dark/light theme switching and saves preference to localStorage
- */
 document.addEventListener('DOMContentLoaded', function () {
 	const themeToggleBtn = document.getElementById('theme-toggle');
 	const html = document.documentElement;

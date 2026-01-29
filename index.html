@@ -859,8 +859,9 @@
         </section>
         <!-- Let's Talk end -->
 
+
         <!-- Contact
-    ============================================= -->
+        ============================================= -->
         <section id="contact" class="section">
           <div class="container">
             <!-- Heading -->
@@ -882,7 +883,7 @@
                     <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2">
                       <i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i>
                     </span>
-                    <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="imgs/profil.png" alt="image loading...">
+                    <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="../imgs/profil.png" alt="image loading...">
                   </span>
                   <span class="text-primary">I enjoy discussing new projects challenges.</span>
                   <span class="text-body-tertiary">Tell me about your goals, your needs, and your timeline </span> and let’s build something great together.
@@ -903,33 +904,74 @@
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                 <h3 class="text-10 fw-600 mb-5">Send me a note</h3>
                 <!-- Contact Form -->
-                <form id="contact-form" class="form-border">
+                <form
+                  id="contact-form"
+                  class="form-border"
+                  action="https://formspree.io/f/meekavzy"
+                  method="POST"
+                >
                   <div class="mb-4">
-                    <input id="name" name="name" type="text" class="form-control" placeholder="Name" required="">
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    >
                   </div>
+
                   <div class="mb-4">
-                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    >
                   </div>
+
                   <div class="mb-4">
-                    <textarea id="form-message" name="message" class="form-control" rows="4" placeholder="Message" required=""></textarea>
+                    <textarea
+                      id="form-message"
+                      name="message"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Message"
+                      required
+                    ></textarea>
                   </div>
+
+                  <input type="hidden" name="_subject" value="Nouveau message depuis le Portfolio">
+
                   <button id="submit-btn" class="btn btn-primary" type="submit">
                     Send Message
                   </button>
 
                   <!-- Alert Messages -->
-                  <div id="alert-success" class="alert alert-success mt-3 d-none" role="alert">
+                  <div
+                    id="alert-success"
+                    class="alert alert-success mt-3 d-none"
+                    role="alert"
+                  >
                     <i class="fas fa-check-circle me-2"></i>
-                    Your message has been sent successfully! I'll get back to
-                    you soon.
+                    Your message has been sent successfully! I'll get back to you soon.
                   </div>
-                  <div id="alert-error" class="alert alert-danger mt-3 d-none" role="alert">
+
+                  <div
+                    id="alert-error"
+                    class="alert alert-danger mt-3 d-none"
+                    role="alert"
+                  >
                     <i class="fas fa-exclamation-circle me-2"></i>
-                    <span id="error-message">Sorry, there was an error sending your message. Please
-                      try again.</span>
+                    <span id="error-message">
+                      Sorry, there was an error sending your message. Please try again.
+                    </span>
                   </div>
                 </form>
                 <!-- Contact Form End -->
+
               </div>
             </div>
           </div>
@@ -957,7 +999,7 @@
             </div>
           </div>
           <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
-            Copyright © 2025
+            Copyright © 2026
             <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.mhrrony.com">Ronhy Raktos</a>. All Rights Reserved.
           </p>
           <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">

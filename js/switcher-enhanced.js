@@ -1,11 +1,4 @@
-/**
- * Enhanced Color Switcher
- * Author: Mhr Rony (https://mhrrony.com)
- * Company: DevStation IT (https://devstationit.com)
- * © 2024-2026 Mhr Rony. All Rights Reserved.
- *
- * Manages theme color switching with localStorage persistence
- */
+
 (function ($) {
 	"use strict";
 

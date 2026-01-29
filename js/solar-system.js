@@ -1,11 +1,3 @@
-/**
- * Solar System Random Start Position
- * Author: Mhr Rony (https://mhrrony.com)
- * Company: DevStation IT (https://devstationit.com)
- * © 2024-2026 Mhr Rony. All Rights Reserved.
- *
- * Randomizes the starting position of each orbit on page load
- */
 document.addEventListener('DOMContentLoaded', function () {
 	const orbits = document.querySelectorAll('.orbit');
 	orbits.forEach((orbit, index) => {

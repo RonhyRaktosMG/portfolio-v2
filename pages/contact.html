@@ -27,8 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <!-- Theme Toggle -->
+     <link rel="stylesheet" type="text/css" href="../css/theme-toggle.css">
     <!-- Colors Css -->
     <link id="color-switcher" type="text/css" rel="stylesheet" href="../css/color-cyan.css">
+
     <!-- Load saved color immediately -->
     <script>
       (function () {
@@ -45,126 +48,7 @@
         }
       })();
     </script>
-    <style>
-      .theme-toggle-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-      }
-      .theme-toggle-btn:hover {
-        transform: scale(1.1);
-      }
-      .theme-toggle-btn i {
-        font-size: 18px;
-        transition: all 0.3s ease;
-      }
-      [data-bs-theme="light"] {
-        --bs-body-bg: #fff;
-        --bs-body-color: #212529;
-        background-color: #fff !important;
-        color: #212529 !important;
-      }
-      [data-bs-theme="light"] body {
-        background-color: #fff !important;
-        color: #212529 !important;
-      }
-      [data-bs-theme="light"] #main-wrapper {
-        color: #212529 !important;
-      }
-      [data-bs-theme="light"] .bg-dark {
-        background-color: #f8f9fa !important;
-      }
-      [data-bs-theme="light"] .text-light,
-      [data-bs-theme="light"] .text-white {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] h1:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] h2:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] h3:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] h4:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] h5:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] h6:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] li:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] p:not(.text-primary):not(.text-secondary) {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"]
-        span:not(.text-primary):not(.text-secondary):not(.text-primary *) {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] .text-10:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-11:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-3:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-4:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-5:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-6:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-7:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-8:not(.text-primary):not(.text-secondary),
-      [data-bs-theme="light"] .text-9:not(.text-primary):not(.text-secondary) {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] .text-primary,
-      [data-bs-theme="light"] .text-primary * {
-        color: var(--bs-primary);
-      }
-      [data-bs-theme="light"] .text-secondary {
-        color: var(--bs-secondary);
-      }
-      [data-bs-theme="light"] .primary-menu {
-      }
-      [data-bs-theme="light"] .primary-menu .nav-link {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] .primary-menu .nav-link.active,
-      [data-bs-theme="light"] .primary-menu .nav-link:hover {
-        color: var(--bs-primary) !important;
-      }
-      [data-bs-theme="light"] .dropdown-menu {
-        background-color: #fff !important;
-        border: 1px solid #dee2e6;
-      }
-      [data-bs-theme="light"] .dropdown-item {
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] .dropdown-item:hover {
-        background-color: #f8f9fa !important;
-        color: var(--bs-primary) !important;
-      }
-      [data-bs-theme="light"] #header.sticky-top-slide {
-        background-color: rgba(255, 255, 255, 0.98) !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
-      [data-bs-theme="light"] .btn-outline-light {
-        border-color: var(--bs-body-color);
-        color: var(--bs-body-color);
-      }
-      [data-bs-theme="light"] .btn-outline-light:hover {
-        background-color: var(--bs-primary);
-        border-color: var(--bs-primary);
-        color: #000;
-      }
-      [data-bs-theme="light"] footer {
-        border-top: 1px solid #dee2e6;
-      }
-      [data-bs-theme="light"] .featured-box {
-        background-color: #fff !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      [data-bs-theme="light"] hr {
-        border-color: rgba(0, 0, 0, 0.1) !important;
-      }
-      [data-bs-theme="light"] .form-control {
-        background-color: #fff !important;
-        border: 1px solid #dee2e6 !important;
-        color: var(--bs-body-color) !important;
-      }
-      [data-bs-theme="light"] .form-control:focus {
-        background-color: #fff !important;
-        border-color: var(--bs-primary) !important;
-      }
-    </style>
+  
   </head>
 
   <body id="top">
@@ -270,82 +154,123 @@
       </header>
       <!-- Header End -->
 
-              <!-- Contact
-    ============================================= -->
-        <section id="contact" class="section">
-          <div class="container">
-            <!-- Heading -->
-            <div class="mx-auto text-center mb-4">
-              <p class="text-primary text-4 fw-500 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
-                Get in Touch
-              </p>
-              <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-                Contact
-              </h2>
-              <hr class="vr heading-separator-line wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
-            </div>
-            <!-- Heading End -->
+      <!-- Contact
+  ============================================= -->
+      <section id="contact" class="section">
+        <div class="container">
+          <!-- Heading -->
+          <div class="mx-auto text-center mb-4">
+            <p class="text-primary text-4 fw-500 mb-1 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+              Get in Touch
+            </p>
+            <h2 class="heading-font-family text-uppercase text-10 fw-600 mb-4 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+              Contact
+            </h2>
+            <hr class="vr heading-separator-line wow slideInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+          </div>
+          <!-- Heading End -->
 
-            <div class="row g-5">
-              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <h3 class="text-9 lh-base mb-5">
-                  <span class="position-relative d-inline-block me-1 mb-n2">
-                    <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2">
-                      <i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i>
-                    </span>
-                    <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="../imgs/profil.png" alt="image loading...">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <h3 class="text-9 lh-base mb-5">
+                <span class="position-relative d-inline-block me-1 mb-n2">
+                  <span class="bg-success position-absolute top-0 end-0 rounded-circle p-1 mt-2 me-2">
+                    <i class="spinner-grow spinner-grow-sm text-success text-opacity-50 position-absolute top-0 end-0 mt-n1 me-n1"></i>
                   </span>
-                  <span class="text-primary">I enjoy discussing new projects challenges.</span>
-                  <span class="text-body-tertiary">Tell me about your goals, your needs, and your timeline </span> and let’s build something great together.
-                </h3>
-                <h4 class="mb-1">Living In:</h4>
-                <p class="text-5">Antananarivo, Madagascar</p>
+                  <img class="img-fluid img-thumb d-flex rounded-circle mb-n1" src="../imgs/profil.png" alt="image loading...">
+                </span>
+                <span class="text-primary">I enjoy discussing new projects challenges.</span>
+                <span class="text-body-tertiary">Tell me about your goals, your needs, and your timeline </span> and let’s build something great together.
+              </h3>
+              <h4 class="mb-1">Living In:</h4>
+              <p class="text-5">Antananarivo, Madagascar</p>
 
-                <h4 class="mb-1">WhatsApp:</h4>
-                <p class="text-5">
-                  <a href="https://wa.me/8801610769804" target="_blank" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
-                    <i class="fab fa-whatsapp me-2"></i>+261341916421
-                  </a>
-                </p>
+              <h4 class="mb-1">WhatsApp:</h4>
+              <p class="text-5">
+                <a href="https://wa.me/8801610769804" target="_blank" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+                  <i class="fab fa-whatsapp me-2"></i>+261341916421
+                </a>
+              </p>
 
-                <h4 class="mb-1">Email:</h4>
-                <p class="text-5">ronhyrakotondrafara08@gmail.com</p>
-              </div>
-              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                <h3 class="text-10 fw-600 mb-5">Send me a note</h3>
-                <!-- Contact Form -->
-                <form id="contact-form" class="form-border">
-                  <div class="mb-4">
-                    <input id="name" name="name" type="text" class="form-control" placeholder="Name" required="">
-                  </div>
-                  <div class="mb-4">
-                    <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="">
-                  </div>
-                  <div class="mb-4">
-                    <textarea id="form-message" name="message" class="form-control" rows="4" placeholder="Message" required=""></textarea>
-                  </div>
-                  <button id="submit-btn" class="btn btn-primary" type="submit">
-                    Send Message
-                  </button>
+              <h4 class="mb-1">Email:</h4>
+              <p class="text-5">ronhyrakotondrafara08@gmail.com</p>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+              <h3 class="text-10 fw-600 mb-5">Send me a note</h3>
+              <!-- Contact Form -->
+              <form
+                id="contact-form"
+                class="form-border"
+                action="https://formspree.io/f/meekavzy"
+                method="POST"
+              >
+                <div class="mb-4">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                  >
+                </div>
 
-                  <!-- Alert Messages -->
-                  <div id="alert-success" class="alert alert-success mt-3 d-none" role="alert">
-                    <i class="fas fa-check-circle me-2"></i>
-                    Your message has been sent successfully! I'll get back to
-                    you soon.
-                  </div>
-                  <div id="alert-error" class="alert alert-danger mt-3 d-none" role="alert">
-                    <i class="fas fa-exclamation-circle me-2"></i>
-                    <span id="error-message">Sorry, there was an error sending your message. Please
-                      try again.</span>
-                  </div>
-                </form>
-                <!-- Contact Form End -->
-              </div>
+                <div class="mb-4">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <textarea
+                    id="form-message"
+                    name="message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="Nouveau message depuis le Portfolio">
+
+                <button id="submit-btn" class="btn btn-primary" type="submit">
+                  Send Message
+                </button>
+
+                <!-- Alert Messages -->
+                <div
+                  id="alert-success"
+                  class="alert alert-success mt-3 d-none"
+                  role="alert"
+                >
+                  <i class="fas fa-check-circle me-2"></i>
+                  Your message has been sent successfully! I'll get back to you soon.
+                </div>
+
+                <div
+                  id="alert-error"
+                  class="alert alert-danger mt-3 d-none"
+                  role="alert"
+                >
+                  <i class="fas fa-exclamation-circle me-2"></i>
+                  <span id="error-message">
+                    Sorry, there was an error sending your message. Please try again.
+                  </span>
+                </div>
+              </form>
+              <!-- Contact Form End -->
+
             </div>
           </div>
-        </section>
-        <!-- Contact end -->
+        </div>
+      </section>
+      <!-- Contact end -->
 
       <!-- Footer
   ============================================= -->
@@ -366,21 +291,13 @@
             </div>
           </div>
           <p class="text-secondary lh-sm text-center text-5 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-            Copyright © 2025
+            Copyright © 2026
             <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Ronhy Raktos</a>. All Rights Reserved.
           </p>
           <p class="text-secondary lh-sm text-center text-5 pt-1 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
             Designed by
             <a class="fw-500 link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" target="_blank" href="https://www.mhrrony.com/">Ronhy Raktos</a>
           </p>
-          <ul class="nav justify-content-center wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
-            <li class="nav-item">
-              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-secondary py-0" data-bs-toggle="modal" data-bs-target="#terms-service" href="#">Terms of Service</a>
-            </li>
-          </ul>
         </div>
       </footer>
       <!-- Footer end -->
@@ -391,160 +308,7 @@
 ============================================= -->
     <a id="back-to-top" href="#top" style="--progress: 100%; display: inline;"></a>
 
-    <!-- Privacy - Modal
-================================== -->
-    <div id="privacy" class="modal fade" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-6">Privacy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-4">
-            <p>
-              At Ronhy Raktos's Fullstack Development Services, your privacy is of
-              utmost importance to me. This Privacy Policy outlines how I
-              collect, use, and protect your personal information when you visit
-              my website or engage my web development services.
-            </p>
-            <h5 class="text-5 mt-4">Information Collection</h5>
-            <ul class="lh-lg">
-              <li>
-                Contact information including name, email address, and phone
-                number when you submit project inquiries or contact forms.
-              </li>
-              <li>
-                Project requirements and technical specifications shared during
-                consultation and development phases.
-              </li>
-              <li>
-                Website analytics data to improve user experience and service
-                quality.
-              </li>
-              <li>
-                Communication records including emails, messages, and meeting
-                notes related to your web development projects.
-              </li>
-            </ul>
-            <h5 class="text-5 mt-4">How I Use Your Information</h5>
-            <ul class="lh-lg">
-              <li>
-                To provide MERN stack development services and technical
-                consultation tailored to your project needs.
-              </li>
-              <li>
-                To communicate project updates, deliverables, and technical
-                documentation throughout the development process.
-              </li>
-              <li>
-                To maintain project repositories, backup systems, and
-                development environments securely.
-              </li>
-              <li>
-                To improve my web development services and portfolio showcase
-                based on client feedback and project outcomes.
-              </li>
-            </ul>
-            <h5 class="text-5 mt-4">Data Security &amp; Protection</h5>
-            <p>
-              All client data is protected using industry-standard security
-              measures including encrypted communications, secure development
-              environments, and confidential project handling. I do not share
-              your information with third parties without explicit consent.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Privacy - Modal End -->
 
-    <!-- Terms of Service - Modal
-================================== -->
-    <div id="terms-service" class="modal fade" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-6">Terms of Service</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-4">
-            <p>
-              Welcome to Ronhy Raktos's Fullstack Web Development Services. By
-              engaging my MERN stack development services or using this website,
-              you agree to comply with and be bound by the following terms and
-              conditions of use.
-            </p>
-            <h3 class="mb-3 mt-4 mt-4">Service Terms</h3>
-            <p>
-              I provide professional fullstack web development services
-              specializing in MongoDB, Express.js, React, and Node.js
-              technologies. All services include code development, testing,
-              deployment assistance, and basic technical support.
-            </p>
-            <h5 class="text-5 mt-4">Project Scope &amp; Development Process</h5>
-            <p>
-              Each web development project begins with a detailed consultation
-              to define requirements, technical specifications, and project
-              timeline. I follow agile development practices with regular
-              updates and client feedback integration throughout the development
-              cycle.
-            </p>
-            <h5 class="text-5 mt-4">Code Ownership &amp; Intellectual Property</h5>
-            <p>
-              Upon full payment completion, clients receive complete ownership
-              of custom-developed code and project assets. I retain the right to
-              showcase completed projects in my portfolio while respecting
-              client confidentiality agreements.
-            </p>
-            <h5 class="text-5 mt-4">Payment Terms &amp; Project Delivery</h5>
-            <p>
-              Projects typically require 50% upfront payment with the remainder
-              due upon completion. All deliverables include source code,
-              documentation, and deployment guidelines. Support period and
-              maintenance terms are specified in individual project agreements.
-            </p>
-            <h3 class="mb-3 mt-4">Service Standards</h3>
-            <p>
-              I am committed to delivering high-quality, scalable web
-              applications using modern development practices, clean code
-              standards, and comprehensive testing. All projects follow industry
-              best practices for security, performance, and maintainability.
-            </p>
-            <h5 class="text-5 mt-4">Technical Support &amp; Maintenance</h5>
-            <ol class="lh-lg">
-              <li>
-                Initial support period included with all projects covers bug
-                fixes and technical clarifications.
-              </li>
-              <li>
-                Extended maintenance agreements available for ongoing updates,
-                feature additions, and performance optimization.
-              </li>
-              <li>
-                Emergency support available for critical issues affecting live
-                applications and production environments.
-              </li>
-              <li>
-                Code documentation and development guidelines provided to
-                facilitate future modifications and team collaboration.
-              </li>
-              <li>
-                Technology stack recommendations based on project requirements,
-                scalability needs, and long-term maintenance considerations.
-              </li>
-            </ol>
-            <h5 class="text-5 mt-4">Limitation of Liability</h5>
-            <p>
-              While I strive for excellence in all development work, liability
-              is limited to the total project value. Clients are responsible for
-              content, compliance requirements, and business-specific
-              functionality beyond technical implementation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Terms & Policy Modal - End -->
 
     <!-- Styles Switcher -->
     <div id="styles-switcher" class="left bg-light-subtle">
@@ -597,6 +361,8 @@
     <script src="../js/switcher-enhanced.js"></script>
     <!-- Custom Script -->
     <script src="../js/main.js"></script>
+    <!-- Contact Script -->
+    <script src="../js/contact-form.js"></script>
 
     <!-- Contact Form Handler -->
     <script>

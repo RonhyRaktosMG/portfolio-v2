@@ -1,37 +1,3 @@
-/*
-==================================================================================
-* Portfolio:  	 MHR RONY - Personal Portfolio
-* Author: 	 Mhr Rony - (https://mhrrony.com)
-* Company:       DevStation IT - (https://devstationit.com)
-* Description:   Main Custom Script File
-==================================================================================
-* COPYRIGHT & LICENSE INFORMATION
-==================================================================================
-*
-* © 2024-2026 Mhr Rony. All Rights Reserved.
-*
-* Portfolio Owner: Mhr Rony
-* Personal Website: https://mhrrony.com
-* Professional Email: mhrrony@gmail.com
-* Company: DevStation IT
-* Company Website: https://devstationit.com
-*
-* This portfolio and its source code are the intellectual property of Mhr Rony.
-* Unauthorized copying, modification, distribution, or use of this code
-* without explicit written permission from the author is strictly prohibited.
-*
-* For inquiries regarding licensing, collaboration, or usage rights,
-* please contact: mhrrony@gmail.com
-*
-* Connect with me:
-* - GitHub: https://github.com/MHR-RONY
-* - LinkedIn: https://www.linkedin.com/in/mhrrony/
-* - Portfolio: https://mhrrony.com
-* - Company: https://devstationit.com
-*
-==================================================================================
-*/
-
 (function ($) {
 	"use strict";
 
