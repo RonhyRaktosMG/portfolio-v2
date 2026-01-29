@@ -1,0 +1,110 @@
+
+:root,
+[data-bs-theme="light"] {
+  --bs-themecolor: #198754;
+  --bs-themecolor-rgb: 25, 135, 84;
+  --bs-themehovercolor: #146c43;
+  --bs-themehovercolor-rgb: 20, 108, 67;
+  --bs-link-color: var(--bs-themecolor);
+  --bs-link-color-rgb: var(--bs-themecolor-rgb);
+  --bs-link-hover-color: var(--bs-themehovercolor);
+  --bs-link-hover-color-rgb: var(--bs-themehovercolor-rgb);
+  --bs-success: var(--bs-themecolor);
+  --bs-success-rgb: var(--bs-themecolor-rgb);
+  --bs-success: #09b850;
+  --bs-success-rgb: 9, 184, 80;
+  --bs-primary: var(--bs-themecolor);
+  --bs-primary-rgb: var(--bs-themecolor-rgb);
+  --bs-primary-text-emphasis: #0a3622;
+  --bs-primary-bg-subtle: #d1e7dd;
+  --bs-primary-border-subtle: #a3cfbb;
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-heading-color: var(--bs-emphasis-color);
+  --bs-body-font-family: Jost, sans-serif;
+  --bs-heading-font-family: Oswald, sans-serif;
+  --bs-body-font-size: 1.125rem;
+}
+
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-link-color: var(--bs-themecolor);
+  --bs-link-color-rgb: var(--bs-themecolor-rgb);
+  --bs-link-hover-color: var(--bs-themehovercolor);
+  --bs-link-hover-color-rgb: var(--bs-themehovercolor-rgb);
+  --bs-heading-color: var(--bs-emphasis-color);
+  --bs-body-color: #dee2e6;
+  --bs-body-color-rgb: 222, 226, 230;
+}
+
+/* Other */
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-hover-color: var(--bs-white);
+}
+
+.btn-outline-primary {
+  --bs-btn-hover-color: var(--bs-white);
+}
+
+.pagination {
+  --bs-pagination-active-color: var(--bs-white);
+}
+
+/*== Overlay Menu ==*/
+.primary-menu.navbar-overlay .navbar-toggler.show span {
+  background: #198754;
+}
+
+.primary-menu.navbar-overlay ul.navbar-nav li a {
+  color: #212529;
+}
+
+.primary-menu.navbar-overlay ul.navbar-nav li:hover a:not(.btn):not(.active) {
+  color: #198754;
+}
+
+.primary-menu.navbar-overlay ul.navbar-nav li a.active:not(.btn) {
+  color: rgba(25, 135, 84, 0.4);
+}
+
+.primary-menu.navbar-overlay
+  ul.navbar-nav
+  > li.dropdown
+  .dropdown-menu
+  li
+  > a:not(.btn) {
+  color: #212529;
+}
+
+.primary-menu.navbar-overlay
+  ul.navbar-nav
+  > li.dropdown
+  .dropdown-menu
+  li:hover
+  > a:not(.btn),
+.primary-menu.navbar-overlay
+  ul.navbar-nav
+  > li.dropdown
+  .dropdown-menu
+  li
+  a.active:not(.btn) {
+  color: #198754;
+}
+
+.primary-menu.navbar-overlay
+  ul.navbar-nav
+  > li.dropdown
+  .dropdown-menu
+  li
+  a.active:not(.btn) {
+  color: rgba(25, 135, 84, 0.4);
+}
+
+.primary-menu.navbar-overlay .social-links a {
+  color: var(--bs-dark);
+}
+
+.primary-menu.navbar-overlay .social-links a:hover {
+  color: #198754;
+}
