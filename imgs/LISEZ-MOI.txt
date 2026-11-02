@@ -1,0 +1,18 @@
+Images a ajouter dans ce dossier (noms exacts)
+
+imgs/profil.png, imgs/logo.png, imgs/icons/*, imgs/projects/*, imgs/services/*  (existants)
+
+NOUVELLES IMAGES
+works/wefnexus.png          capture de https://wefnexusmdg.earth/
+works/ilas-mada.png         capture de https://ilas-mada.com
+works/crush4fun.png         capture de https://crush4fun.com
+certifications/lpi-badge.png  badge LPI
+projects/parkaapp/Parka-Preview.png  (capture verticale haute, carte du grid)
+projects/parkaapp/Parka-Hero.png
+projects/parkaapp/Parka-Parkings.png
+projects/parkaapp/Parka-Clients.png
+projects/parkaapp/Parka-Occupations.png
+projects/parkaapp/Parka-Payments.png
+projects/parkaapp/Parka-Subscriptions.png
+projects/parkaapp/Parka-Dashboard.png
+services/web.jfif           illustration du service Web Development

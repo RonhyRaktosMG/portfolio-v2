@@ -5429,3 +5429,180 @@ project-scroll-image {
     /* bottom-left */ calc(100% - 8px) calc(100% - 8px); /* bottom-right */
   background-repeat: no-repeat;
 }
+
+/* ==========================================================
+   Professional Works, Certification & services grid tweaks
+   (follows the existing portfolio-box / service-card design)
+   ========================================================== */
+
+/* 7 services -> last card sits alone on the final row: no divider line */
+.brands-grid .row > :last-child .service-card::after {
+  display: none;
+}
+
+/* ---- Professional works cards ---- */
+.work-card {
+  display: block;
+  position: relative;
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.25);
+  background: rgba(var(--bs-primary-rgb), 0.03);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(var(--bs-primary-rgb), 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  color: inherit;
+}
+
+.work-card .work-thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--bs-primary-rgb), 0.25),
+    rgba(var(--bs-primary-rgb), 0.05)
+  );
+}
+
+.work-card .work-fallback-icon {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--bs-primary);
+  opacity: 0.6;
+}
+
+.work-card .work-thumb img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s ease;
+}
+
+.work-card:hover .work-thumb img {
+  transform: scale(1.06);
+}
+
+.work-card .work-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-card:hover .work-overlay,
+.work-card:focus-visible .work-overlay {
+  opacity: 1;
+}
+
+/* div (not span/p) so the light-theme text overrides do not recolor it */
+.work-card .work-visit {
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #fff;
+  border-radius: 50rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.work-card .work-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.work-card .work-tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  font-weight: 500;
+}
+
+.work-card .work-domain {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* touch devices have no hover: always show the "visit" hint */
+@media (hover: none) {
+  .work-card .work-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 55%);
+    align-items: flex-end;
+    padding-bottom: 0.75rem;
+  }
+  .work-card .work-visit {
+    padding: 0.25rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- Certification feature ---- */
+.cert-feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--bs-primary-rgb), 0.1) 0%,
+    transparent 60%
+  );
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cert-feature:hover {
+  border-color: rgba(var(--bs-primary-rgb), 0.8);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.cert-feature .cert-badge {
+  flex: 0 0 auto;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-feature .cert-badge img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.35));
+}
+
+.cert-feature .cert-info {
+  flex: 1 1 280px;
+}
+
+@media (max-width: 575px) {
+  .cert-feature {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .cert-feature .cert-info .hstack {
+    justify-content: center;
+  }
+}
